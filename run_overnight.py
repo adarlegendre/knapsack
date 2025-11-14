@@ -15,8 +15,9 @@ import os
 import json
 import time
 import csv
+import gc
 from datetime import datetime
-from typing import List, Dict
+from typing import List, Dict, Optional
 
 # Import modules
 from test_generator import generate_test_cases, find_closest_test_case
@@ -63,7 +64,7 @@ def benchmark_solution_no_timeout(solution_name: str, solution_func, items: List
         elapsed_ms = elapsed * 1000
         return None, f"ERROR: {str(e)}", elapsed_ms
 
-def benchmark_test_case_no_timeout(test_file: str) -> Dict:
+def benchmark_test_case_no_timeout(test_file: str, skip_graph_solutions: bool = False) -> Dict:
     """
     Benchmark all solutions on a test case without timeout.
     """
@@ -95,9 +96,22 @@ def benchmark_test_case_no_timeout(test_file: str) -> Dict:
     solutions = [
         ('dp_bottomup', knapsack_dp_bottomup),
         ('dp_topdown', knapsack_dp_topdown),
-        ('graph_statespace', knapsack_graph_statespace),
-        ('graph_dag', knapsack_graph_dag)
     ]
+    
+    # Only add graph solutions if not skipping
+    if not skip_graph_solutions:
+        solutions.extend([
+            ('graph_statespace', knapsack_graph_statespace),
+            ('graph_dag', knapsack_graph_dag)
+        ])
+    else:
+        # Set graph solutions to skipped status
+        results['graph_statespace_time'] = None
+        results['graph_statespace_status'] = 'SKIPPED (large size)'
+        results['graph_statespace_actual_time'] = None
+        results['graph_dag_time'] = None
+        results['graph_dag_status'] = 'SKIPPED (large size)'
+        results['graph_dag_actual_time'] = None
     
     for sol_name, sol_func in solutions:
         log_message(f"  Running {sol_name}...")
@@ -125,7 +139,8 @@ def benchmark_test_case_no_timeout(test_file: str) -> Dict:
 def run_overnight_benchmark(target_sizes: List[int], 
                            test_dir: str = 'results',
                            output_file: str = 'results/overnight_benchmark_results.csv',
-                           log_file: str = 'overnight_log.txt'):
+                           log_file: str = 'overnight_log.txt',
+                           skip_graph_solutions_for_large: Optional[int] = None):
     """
     Run complete overnight benchmarking pipeline.
     
@@ -204,72 +219,109 @@ def run_overnight_benchmark(target_sizes: List[int],
                 for row in reader:
                     test_file_path = row.get('test_file', '')
                     # Check if this test case has complete results
-                    has_complete = all([
-                        row.get('dp_bottomup_status') == 'SUCCESS',
-                        row.get('dp_topdown_status') == 'SUCCESS',
-                        # Graph solutions may fail, so check if they tried
-                        row.get('graph_statespace_status') in ['SUCCESS', 'TIMEOUT', 'ERROR'],
-                        row.get('graph_dag_status') in ['SUCCESS', 'TIMEOUT', 'ERROR']
-                    ])
-                    if has_complete:
+                    # For large sizes, graph solutions may be skipped
+                    dp_complete = (row.get('dp_bottomup_status') == 'SUCCESS' and 
+                                  row.get('dp_topdown_status') == 'SUCCESS')
+                    graph_status = row.get('graph_statespace_status', '')
+                    graph_complete = graph_status in ['SUCCESS', 'TIMEOUT', 'ERROR', 'SKIPPED (large size)']
+                    
+                    if dp_complete and graph_complete:
                         existing_results[test_file_path] = row
                         log_message(f"  Found existing results for: {os.path.basename(test_file_path)}")
+                    # Clear row from memory after processing
+                    del row
         except Exception as e:
             log_message(f"  Warning: Could not load existing results: {e}")
+        finally:
+            gc.collect()  # Free memory after loading existing results
     
     if existing_results:
         log_message(f"  Resuming: {len(existing_results)} test cases already completed")
         log_message("")
     
-    all_results = []
+    # Prepare CSV file for incremental writing
+    fieldnames = [
+        'test_file', 'target_nodes', 'actual_nodes', 'actual_edges',
+        'num_items', 'capacity',
+        'dp_bottomup_time', 'dp_bottomup_status', 'dp_bottomup_actual_time',
+        'dp_topdown_time', 'dp_topdown_status', 'dp_topdown_actual_time',
+        'graph_statespace_time', 'graph_statespace_status', 'graph_statespace_actual_time',
+        'graph_dag_time', 'graph_dag_status', 'graph_dag_actual_time'
+    ]
+    
+    # Open CSV file for incremental writing
+    csv_file_exists = os.path.exists(output_file)
+    csv_file = open(output_file, 'a' if csv_file_exists else 'w', newline='', encoding='utf-8')
+    writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
+    
+    # Write header if new file
+    if not csv_file_exists:
+        writer.writeheader()
+        csv_file.flush()
+    
+    all_results = []  # Keep for summary at end
     completed_count = 0
     
     for i, test_file in enumerate(test_files, 1):
         # Check if already completed
         if test_file in existing_results:
             log_message(f"[{i}/{len(test_files)}] {os.path.basename(test_file)} [SKIP - Already completed]")
-            all_results.append(existing_results[test_file])
+            result = existing_results[test_file]
+            all_results.append(result)
             completed_count += 1
             continue
         
         log_message(f"[{i}/{len(test_files)}] {os.path.basename(test_file)}")
         
         try:
-            result = benchmark_test_case_no_timeout(test_file)
+            # Check if we should skip graph solutions for large sizes (only if threshold is set)
+            skip_graph = False
+            if skip_graph_solutions_for_large is not None:
+                with open(test_file, 'r', encoding='utf-8') as f:
+                    test_data = json.load(f)
+                actual_nodes = test_data.get('metadata', {}).get('actual_nodes', 0)
+                skip_graph = actual_nodes >= skip_graph_solutions_for_large if actual_nodes else False
+                del test_data  # Free memory
+                
+                if skip_graph:
+                    log_message(f"  Note: Skipping graph solutions for large size ({actual_nodes} nodes)")
+            
+            result = benchmark_test_case_no_timeout(test_file, skip_graph_solutions=skip_graph)
+            
+            # Write result immediately to CSV (incremental save)
+            writer.writerow(result)
+            csv_file.flush()  # Ensure data is written to disk
+            
             all_results.append(result)
             log_message("")
+            
+            # Force garbage collection after each test case to free memory
+            del result
+            gc.collect()
+            
+        except MemoryError as e:
+            log_message(f"  [MEMORY ERROR] Out of memory: {e}")
+            log_message("  Consider skipping graph solutions for this size")
+            log_message("")
+            gc.collect()  # Try to free memory
+            continue
         except Exception as e:
             log_message(f"  [FAILED] Error: {e}")
             log_message("")
+            gc.collect()
             continue
+    
+    csv_file.close()  # Close CSV file
     
     if completed_count > 0:
         log_message(f"Resumed: {completed_count} test cases skipped (already completed)")
         log_message("")
     
-    # Step 3: Save results
+    # Step 3: Summary (results already saved incrementally)
     if all_results:
-        log_message("STEP 3: Saving results...")
+        log_message("STEP 3: Results summary...")
         log_message("-" * 80)
-        
-        os.makedirs(os.path.dirname(output_file) if os.path.dirname(output_file) else '.', 
-                   exist_ok=True)
-        
-        fieldnames = [
-            'test_file', 'target_nodes', 'actual_nodes', 'actual_edges',
-            'num_items', 'capacity',
-            'dp_bottomup_time', 'dp_bottomup_status', 'dp_bottomup_actual_time',
-            'dp_topdown_time', 'dp_topdown_status', 'dp_topdown_actual_time',
-            'graph_statespace_time', 'graph_statespace_status', 'graph_statespace_actual_time',
-            'graph_dag_time', 'graph_dag_status', 'graph_dag_actual_time'
-        ]
-        
-        with open(output_file, 'w', newline='', encoding='utf-8') as f:
-            writer = csv.DictWriter(f, fieldnames=fieldnames)
-            writer.writeheader()
-            writer.writerows(all_results)
-        
-        log_message(f"Results saved to: {output_file}")
+        log_message(f"Results saved incrementally to: {output_file}")
         log_message("")
         
         # Print summary
@@ -354,19 +406,25 @@ def main():
     print("=" * 80)
     print("This script will:")
     print("  1. Generate test cases (if needed)")
-    print("  2. Run benchmarks with NO TIMEOUT")
-    print("  3. Save all results to CSV")
+    print("  2. Run benchmarks with NO TIMEOUT (ALL 4 solutions)")
+    print("  3. Save all results to CSV (incremental)")
     print("  4. Generate performance graphs")
     print("  5. Log everything to overnight_log.txt")
     print("")
     print(f"Target sizes: {target_sizes}")
+    print("")
+    print("Memory optimizations:")
+    print("  - Incremental CSV writing (no memory buildup)")
+    print("  - Garbage collection after each test case")
+    print("  - ALL solutions will run (DP + Graph solutions)")
     print("")
     print("Press Ctrl+C to stop at any time")
     print("=" * 80)
     print()
     
     try:
-        run_overnight_benchmark(target_sizes)
+        # Run with ALL solutions (None = no skipping)
+        run_overnight_benchmark(target_sizes, skip_graph_solutions_for_large=None)
     except KeyboardInterrupt:
         print("\n\nInterrupted by user. Partial results may be saved.")
         sys.exit(1)
