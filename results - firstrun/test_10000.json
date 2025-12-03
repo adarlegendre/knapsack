@@ -1,0 +1,87 @@
+{
+  "capacity": 86,
+  "items": [
+    {
+      "name": "Item_1",
+      "weight": 13,
+      "value": 27
+    },
+    {
+      "name": "Item_2",
+      "weight": 2,
+      "value": 17
+    },
+    {
+      "name": "Item_3",
+      "weight": 17,
+      "value": 32
+    },
+    {
+      "name": "Item_4",
+      "weight": 13,
+      "value": 20
+    },
+    {
+      "name": "Item_5",
+      "weight": 16,
+      "value": 23
+    },
+    {
+      "name": "Item_6",
+      "weight": 19,
+      "value": 14
+    },
+    {
+      "name": "Item_7",
+      "weight": 17,
+      "value": 9
+    },
+    {
+      "name": "Item_8",
+      "weight": 10,
+      "value": 9
+    },
+    {
+      "name": "Item_9",
+      "weight": 4,
+      "value": 40
+    },
+    {
+      "name": "Item_10",
+      "weight": 9,
+      "value": 35
+    },
+    {
+      "name": "Item_11",
+      "weight": 20,
+      "value": 10
+    },
+    {
+      "name": "Item_12",
+      "weight": 10,
+      "value": 7
+    },
+    {
+      "name": "Item_13",
+      "weight": 3,
+      "value": 22
+    },
+    {
+      "name": "Item_14",
+      "weight": 16,
+      "value": 36
+    },
+    {
+      "name": "Item_15",
+      "weight": 4,
+      "value": 23
+    }
+  ],
+  "metadata": {
+    "target_nodes": 10000,
+    "actual_nodes": 16384,
+    "actual_edges": 100204,
+    "num_items": 15,
+    "error": 1.4892666666666665
+  }
+}

@@ -13,58 +13,68 @@ import json
 from typing import List, Dict, Tuple
 from collections import deque, defaultdict
 
-def count_graph_nodes_edges(items: List[Dict], capacity: int) -> Tuple[int, int]:
+def count_graph_nodes_edges(items: List[Dict], capacity: int, max_nodes: int = None) -> Tuple[int, int]:
     """
     Count the number of nodes and edges in the state-space graph.
+    Optimized: Early termination, efficient state representation.
     
     Args:
         items: List of items with 'name', 'weight', 'value'
         capacity: Maximum weight capacity
+        max_nodes: Optional limit - stop counting if exceeds this (for early termination)
         
     Returns:
         Tuple of (num_nodes, num_edges)
     """
-    # Build the state-space graph
-    graph = defaultdict(list)  # node -> [(neighbor, edge_weight), ...]
-    nodes = set()
+    # Pre-extract item properties for faster access
+    item_weights = [item['weight'] for item in items]
+    item_names = [item['name'] for item in items]
+    n = len(items)
     
-    # Start with empty knapsack state
-    start = (0, ())
-    nodes.add(start)
-    queue = deque([start])
+    # Use frozenset for items (faster than tuple for membership testing)
+    # But we'll use a bitmask approach for even better performance
+    # State: (weight, items_bitmask) where bitmask is an integer
+    
+    nodes = set()
+    edges = 0
     visited = set()
     
+    # Start with empty knapsack state: weight=0, no items (bitmask=0)
+    start = (0, 0)
+    nodes.add(start)
+    queue = deque([start])
+    visited.add(start)
+    
     while queue:
-        current_state = queue.popleft()
-        if current_state in visited:
-            continue
-        visited.add(current_state)
+        current_weight, items_mask = queue.popleft()
         
-        current_weight, current_items = current_state
+        # Early termination if we exceed max_nodes limit
+        # Check before processing to avoid unnecessary work
+        if max_nodes is not None and len(nodes) >= max_nodes:
+            return len(nodes), edges
         
         # Try adding each item not yet selected
-        for item in items:
-            if item['name'] in current_items:
+        for i in range(n):
+            # Check if item i is already selected (using bitmask)
+            if items_mask & (1 << i):
                 continue
             
-            new_weight = current_weight + item['weight']
+            weight = item_weights[i]
+            new_weight = current_weight + weight
+            
             if new_weight <= capacity:
-                # Create new state
-                new_items = tuple(sorted(current_items + (item['name'],)))
-                new_state = (new_weight, new_items)
+                # Create new state with item i added
+                new_mask = items_mask | (1 << i)
+                new_state = (new_weight, new_mask)
                 
-                # Add edge from current_state to new_state
-                graph[current_state].append((new_state, item['value']))
-                nodes.add(new_state)
+                edges += 1  # Count edge
                 
                 if new_state not in visited:
+                    visited.add(new_state)
+                    nodes.add(new_state)
                     queue.append(new_state)
     
-    # Count edges
-    num_edges = sum(len(neighbors) for neighbors in graph.values())
-    num_nodes = len(nodes)
-    
-    return num_nodes, num_edges
+    return len(nodes), edges
 
 def count_graph_metrics(input_file: str = 'input.json') -> Dict:
     """

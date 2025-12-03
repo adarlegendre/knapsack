@@ -64,7 +64,7 @@ def find_closest_test_case(target_nodes: int, target_edges: int = None,
         target_nodes: Target number of nodes
         target_edges: Target number of edges (if None, will be estimated)
         max_attempts: Maximum attempts to find good parameters
-        tolerance: Acceptable deviation from target (±10% default)
+        tolerance: Acceptable deviation from target (±10% default, relaxed for large sizes)
         
     Returns:
         Dictionary with 'items', 'capacity', 'actual_nodes', 'actual_edges', 'error'
@@ -73,11 +73,19 @@ def find_closest_test_case(target_nodes: int, target_edges: int = None,
         # Estimate edges: roughly 2-5x nodes depending on items
         target_edges = int(target_nodes * 3)
     
+    # Relax tolerance for very large sizes (it's hard to hit exact targets)
+    if target_nodes >= 30000:
+        tolerance = 0.3  # 30% tolerance for 30K+
+    elif target_nodes >= 20000:
+        tolerance = 0.25  # 25% tolerance for 20K+
+    elif target_nodes >= 10000:
+        tolerance = 0.2  # 20% tolerance for 10K+
+    
     best_case = None
     best_error = float('inf')
     
-    # Heuristics for initial parameters
-    # More nodes typically need more items, but relationship is exponential
+    # Improved heuristics for very large sizes
+    # For large sizes, we need more items with smaller weights to create more states
     if target_nodes < 1000:
         num_items_range = (8, 15)
         weight_range = (1, 10)
@@ -87,9 +95,28 @@ def find_closest_test_case(target_nodes: int, target_edges: int = None,
     elif target_nodes < 20000:
         num_items_range = (15, 25)
         weight_range = (1, 20)
+    elif target_nodes < 50000:
+        num_items_range = (18, 28)
+        weight_range = (1, 18)  # Smaller weights for more states
+    elif target_nodes < 100000:
+        num_items_range = (20, 30)
+        weight_range = (1, 15)  # Even smaller weights
+    else:  # 100K+
+        num_items_range = (22, 32)
+        weight_range = (1, 12)  # Smallest weights for maximum states
+    
+    # Reduce capacity ratios to try (fewer iterations for large sizes)
+    if target_nodes >= 50000:
+        capacity_ratios = [0.55, 0.65]  # Just 2 ratios for very large
+    elif target_nodes >= 20000:
+        capacity_ratios = [0.5, 0.6, 0.7]  # 3 ratios
+    elif target_nodes > 5000:
+        capacity_ratios = [0.5, 0.6, 0.7]
     else:
-        num_items_range = (18, 30)
-        weight_range = (1, 25)
+        capacity_ratios = [0.4, 0.5, 0.6, 0.7, 0.8]
+    
+    # For very large sizes, use adaptive search strategy
+    adaptive_search = target_nodes >= 20000
     
     for attempt in range(max_attempts):
         # Try different parameter combinations
@@ -97,27 +124,82 @@ def find_closest_test_case(target_nodes: int, target_edges: int = None,
         weight_min, weight_max = weight_range
         value_min, value_max = (1, weight_max * 2)  # Values typically 1-2x weights
         
-        # Adjust based on attempt number
-        if attempt > max_attempts // 2:
-            # Try smaller weights to get more states
-            weight_max = max(weight_min, weight_max - 3)
+        # Adaptive adjustments based on attempt number and target size
+        if adaptive_search:
+            # For large sizes, progressively try smaller weights
+            if attempt < max_attempts // 3:
+                # First third: try current range
+                pass
+            elif attempt < 2 * max_attempts // 3:
+                # Second third: reduce weights slightly
+                weight_max = max(weight_min, weight_max - 2)
+            else:
+                # Last third: reduce weights more aggressively
+                weight_max = max(weight_min, weight_max - 4)
+        else:
+            # Original strategy for smaller sizes
+            if attempt > max_attempts // 2:
+                weight_max = max(weight_min, weight_max - 3)
         
         items = generate_items(num_items, (weight_min, weight_max), 
                               (value_min, value_max), seed=attempt)
         
-        # Try different capacity ratios
-        for ratio in [0.4, 0.5, 0.6, 0.7, 0.8]:
+        # Try different capacity ratios (reduced for large targets)
+        for ratio in capacity_ratios:
             capacity = estimate_capacity(items, ratio)
             if capacity < 1:
                 continue
             
             try:
-                actual_nodes, actual_edges = count_graph_nodes_edges(items, capacity)
+                # Early termination: if we're way off target, skip early
+                # Use larger limit for very large sizes to allow more exploration
+                # For very large sizes, be more lenient to allow finding ANY valid case
+                if target_nodes >= 50000:
+                    max_nodes_limit = int(target_nodes * 4.0)  # Very lenient for 50K+
+                elif target_nodes >= 30000:
+                    max_nodes_limit = int(target_nodes * 3.5)  # More lenient for 30K+
+                elif target_nodes >= 20000:
+                    max_nodes_limit = int(target_nodes * 3.0)  # More lenient for 20K+
+                elif target_nodes > 1000:
+                    max_nodes_limit = int(target_nodes * 2.5)
+                else:
+                    max_nodes_limit = None
+                    
+                actual_nodes, actual_edges = count_graph_nodes_edges(items, capacity, max_nodes=max_nodes_limit)
+                
+                # If we hit the limit, this case is too large, skip it
+                # BUT for very large sizes, accept cases that are close to limit if we have no better option
+                if max_nodes_limit and actual_nodes >= max_nodes_limit:
+                    # For very large sizes, if we have no best_case yet, accept this one
+                    if target_nodes >= 20000 and best_case is None:
+                        # Accept this as best_case even if over limit (better than nothing)
+                        # Use actual error instead of 1.0
+                        node_error = abs(actual_nodes - target_nodes) / target_nodes
+                        best_case = {
+                            'items': items,
+                            'capacity': capacity,
+                            'actual_nodes': actual_nodes,
+                            'actual_edges': actual_edges,
+                            'target_nodes': target_nodes,
+                            'target_edges': target_edges,
+                            'error': node_error,  # Use actual error
+                            'num_items': num_items
+                        }
+                        best_error = node_error
+                    continue
+                
+                # Skip if actual_nodes is 0 (invalid case)
+                if actual_nodes == 0:
+                    continue
                 
                 # Calculate error (normalized)
                 node_error = abs(actual_nodes - target_nodes) / target_nodes
                 edge_error = abs(actual_edges - target_edges) / target_edges if target_edges > 0 else 0
                 total_error = (node_error + edge_error) / 2
+                
+                # For very large sizes, prioritize node count over edge count
+                if target_nodes >= 30000:
+                    total_error = node_error * 0.8 + edge_error * 0.2
                 
                 # Check if within tolerance
                 if node_error <= tolerance and edge_error <= tolerance:
@@ -146,14 +228,58 @@ def find_closest_test_case(target_nodes: int, target_edges: int = None,
                         'num_items': num_items
                     }
             except Exception as e:
-                # Skip if error (e.g., too large)
+                # Skip if error (e.g., too large, memory error)
+                # For debugging: log first few errors for large sizes
+                if target_nodes >= 20000 and attempt < 3:
+                    import sys
+                    print(f"      Attempt {attempt+1}: Exception - {type(e).__name__}: {str(e)[:100]}", file=sys.stderr)
                 continue
     
     # Return best case found (even if not within tolerance)
     if best_case:
         return best_case
-    else:
-        raise ValueError(f"Could not generate test case for target {target_nodes} nodes")
+    
+    # If no best case found, try one more time with very conservative parameters
+    # This is a fallback for very large sizes
+    if target_nodes >= 20000:
+        print(f"    Warning: No good match found, trying fallback strategy...")
+        # Try with minimal items and weights to maximize states
+        fallback_items = generate_items(
+            num_items_range[0],  # Minimum items
+            (1, weight_range[1] // 2),  # Half the max weight
+            (1, weight_range[1]),  # Values
+            seed=999999  # Fixed seed for reproducibility
+        )
+        
+        # Try a few capacity ratios
+        for ratio in [0.5, 0.6]:
+            try:
+                capacity = estimate_capacity(fallback_items, ratio)
+                if capacity < 1:
+                    continue
+                
+                # Very lenient limit for fallback
+                max_nodes_limit = int(target_nodes * 5.0)
+                actual_nodes, actual_edges = count_graph_nodes_edges(
+                    fallback_items, capacity, max_nodes=max_nodes_limit
+                )
+                
+                # Accept any valid case as fallback
+                if actual_nodes > 0:
+                    return {
+                        'items': fallback_items,
+                        'capacity': capacity,
+                        'actual_nodes': actual_nodes,
+                        'actual_edges': actual_edges,
+                        'target_nodes': target_nodes,
+                        'target_edges': target_edges,
+                        'error': abs(actual_nodes - target_nodes) / target_nodes,
+                        'num_items': len(fallback_items)
+                    }
+            except Exception:
+                continue
+    
+    raise ValueError(f"Could not generate test case for target {target_nodes} nodes")
 
 def generate_test_cases(target_sizes: List[int], output_dir: str = 'results') -> List[Dict]:
     """

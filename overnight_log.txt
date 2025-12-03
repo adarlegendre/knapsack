@@ -1,12 +1,1435 @@
-Overnight Benchmarking Session Started: 2025-11-13 13:15:47.360055
+Overnight Benchmarking Session Started: 2025-11-19 15:07:26.760551
 ================================================================================
 
-[2025-11-13 13:15:47] ================================================================================
-[2025-11-13 13:15:47] Overnight Benchmarking - NO TIMEOUT RESTRICTIONS
-[2025-11-13 13:15:47] ================================================================================
-[2025-11-13 13:15:47] Target sizes: [1000000]
-[2025-11-13 13:15:47] Output: results/overnight_benchmark_results.csv
-[2025-11-13 13:15:47] 
-[2025-11-13 13:15:47] STEP 1: Generating test cases...
-[2025-11-13 13:15:47] --------------------------------------------------------------------------------
-[2025-11-13 13:15:47]   Generating test case for 1000000 nodes...
+[2025-11-19 15:07:26] ================================================================================
+[2025-11-19 15:07:26] Overnight Benchmarking - NO TIMEOUT RESTRICTIONS
+[2025-11-19 15:07:26] ================================================================================
+[2025-11-19 15:07:26] Target sizes: [100, 5149, 10198, 15248, 20297, 25347, 30396, 35446, 40495, 45545, 50594, 55644, 60693, 65743, 70792, 75842, 80891, 85941, 90990, 96040, 101089, 106139, 111188, 116238, 121287, 126337, 131386, 136436, 141485, 146535, 151584, 156634, 161683, 166733, 171782, 176832, 181881, 186931, 191980, 197030, 202079, 207129, 212178, 217228, 222277, 227327, 232376, 237426, 242475, 247525, 252574, 257624, 262673, 267723, 272772, 277822, 282871, 287921, 292970, 298020, 303069, 308119, 313168, 318218, 323267, 328317, 333366, 338416, 343465, 348515, 353564, 358614, 363663, 368713, 373762, 378812, 383861, 388911, 393960, 399010, 404059, 409109, 414158, 419208, 424257, 429307, 434356, 439406, 444455, 449505, 454554, 459604, 464653, 469703, 474752, 479802, 484851, 489901, 494950, 500000]
+[2025-11-19 15:07:26] Output: results/overnight_benchmark_results.csv
+[2025-11-19 15:07:26] 
+[2025-11-19 15:07:26] STEP 1: Generating test cases...
+[2025-11-19 15:07:26] --------------------------------------------------------------------------------
+[2025-11-19 15:07:26]   Generating test case for 100 nodes...
+[2025-11-19 15:07:32]     [OK] Generated: results/test_100.json
+[2025-11-19 15:07:32]     Actual: 90 nodes, 248 edges
+[2025-11-19 15:07:32]   Generating test case for 5149 nodes...
+[2025-11-19 15:07:38]     [FAILED] Could not generate 5149: Could not generate test case for target 5149 nodes
+[2025-11-19 15:07:38]   Generating test case for 10198 nodes...
+[2025-11-19 15:07:47]     [OK] Generated: results/test_10198.json
+[2025-11-19 15:07:47]     Actual: 16384 nodes, 100204 edges
+[2025-11-19 15:07:47]   Generating test case for 15248 nodes...
+[2025-11-19 15:08:01]     [OK] Generated: results/test_15248.json
+[2025-11-19 15:08:01]     Actual: 16384 nodes, 100204 edges
+[2025-11-19 15:08:01]   Generating test case for 20297 nodes...
+[2025-11-19 15:08:28]     [OK] Generated: results/test_20297.json
+[2025-11-19 15:08:28]     Actual: 60891 nodes, 368565 edges
+[2025-11-19 15:08:28]   Generating test case for 25347 nodes...
+[2025-11-19 15:09:03]     [OK] Generated: results/test_25347.json
+[2025-11-19 15:09:03]     Actual: 76041 nodes, 397108 edges
+[2025-11-19 15:09:03]   Generating test case for 30396 nodes...
+[2025-11-19 15:10:11]     [OK] Generated: results/test_30396.json
+[2025-11-19 15:10:11]     Actual: 106389 nodes, 579002 edges
+[2025-11-19 15:10:11]   Generating test case for 35446 nodes...
+[2025-11-19 15:11:39]     [OK] Generated: results/test_35446.json
+[2025-11-19 15:11:39]     Actual: 124063 nodes, 607548 edges
+[2025-11-19 15:11:39]   Generating test case for 40495 nodes...
+[2025-11-19 15:13:26]     [OK] Generated: results/test_40495.json
+[2025-11-19 15:13:26]     Actual: 141733 nodes, 709635 edges
+[2025-11-19 15:13:26]   Generating test case for 45545 nodes...
+[2025-11-19 15:15:30]     [OK] Generated: results/test_45545.json
+[2025-11-19 15:15:30]     Actual: 159408 nodes, 817954 edges
+[2025-11-19 15:15:30]   Generating test case for 50594 nodes...
+[2025-11-19 15:17:33]     [OK] Generated: results/test_50594.json
+[2025-11-19 15:17:33]     Actual: 202376 nodes, 994563 edges
+[2025-11-19 15:17:33]   Generating test case for 55644 nodes...
+[2025-11-19 15:19:48]     [OK] Generated: results/test_55644.json
+[2025-11-19 15:19:48]     Actual: 222584 nodes, 1026780 edges
+[2025-11-19 15:19:48]   Generating test case for 60693 nodes...
+[2025-11-19 15:22:16]     [OK] Generated: results/test_60693.json
+[2025-11-19 15:22:16]     Actual: 242777 nodes, 1121630 edges
+[2025-11-19 15:22:16]   Generating test case for 65743 nodes...
+[2025-11-19 15:24:58]     [OK] Generated: results/test_65743.json
+[2025-11-19 15:24:58]     Actual: 262972 nodes, 1221630 edges
+[2025-11-19 15:24:58]   Generating test case for 70792 nodes...
+[2025-11-19 15:28:18]     [OK] Generated: results/test_70792.json
+[2025-11-19 15:28:18]     Actual: 283169 nodes, 1340130 edges
+[2025-11-19 15:28:18]   Generating test case for 75842 nodes...
+[2025-11-19 15:31:31]     [OK] Generated: results/test_75842.json
+[2025-11-19 15:31:31]     Actual: 303368 nodes, 1462855 edges
+[2025-11-19 15:31:31]   Generating test case for 80891 nodes...
+[2025-11-19 15:35:12]     [OK] Generated: results/test_80891.json
+[2025-11-19 15:35:12]     Actual: 323565 nodes, 1551005 edges
+[2025-11-19 15:35:12]   Generating test case for 85941 nodes...
+[2025-11-19 15:39:03]     [OK] Generated: results/test_85941.json
+[2025-11-19 15:39:03]     Actual: 343771 nodes, 1644480 edges
+[2025-11-19 15:39:03]   Generating test case for 90990 nodes...
+[2025-11-19 15:43:08]     [OK] Generated: results/test_90990.json
+[2025-11-19 15:43:08]     Actual: 363962 nodes, 1747405 edges
+[2025-11-19 15:43:08]   Generating test case for 96040 nodes...
+[2025-11-19 15:47:42]     [OK] Generated: results/test_96040.json
+[2025-11-19 15:47:42]     Actual: 384160 nodes, 1871080 edges
+[2025-11-19 15:47:42]   Generating test case for 101089 nodes...
+[2025-11-19 15:52:05]     [OK] Generated: results/test_101089.json
+[2025-11-19 15:52:05]     Actual: 404358 nodes, 1934234 edges
+[2025-11-19 15:52:05]   Generating test case for 106139 nodes...
+[2025-11-19 15:56:48]     [OK] Generated: results/test_106139.json
+[2025-11-19 15:56:48]     Actual: 424556 nodes, 2797685 edges
+[2025-11-19 15:56:48]   Generating test case for 111188 nodes...
+[2025-11-19 16:01:45]     [OK] Generated: results/test_111188.json
+[2025-11-19 16:01:45]     Actual: 444754 nodes, 2934965 edges
+[2025-11-19 16:01:45]   Generating test case for 116238 nodes...
+[2025-11-19 16:07:08]     [OK] Generated: results/test_116238.json
+[2025-11-19 16:07:08]     Actual: 464953 nodes, 3097415 edges
+[2025-11-19 16:07:08]   Generating test case for 121287 nodes...
+[2025-11-19 16:12:37]     [OK] Generated: results/test_121287.json
+[2025-11-19 16:12:37]     Actual: 485148 nodes, 3266435 edges
+[2025-11-19 16:12:37]   Generating test case for 126337 nodes...
+[2025-11-19 16:18:36]     [OK] Generated: results/test_126337.json
+[2025-11-19 16:18:36]     Actual: 505351 nodes, 3424235 edges
+[2025-11-19 16:18:36]   Generating test case for 131386 nodes...
+[2025-11-19 16:24:40]     [OK] Generated: results/test_131386.json
+[2025-11-19 16:24:40]     Actual: 525546 nodes, 3612725 edges
+[2025-11-19 16:24:40]   Generating test case for 136436 nodes...
+[2025-11-19 16:31:02]     [OK] Generated: results/test_136436.json
+[2025-11-19 16:31:02]     Actual: 545745 nodes, 3771020 edges
+[2025-11-19 16:31:02]   Generating test case for 141485 nodes...
+[2025-11-19 16:37:36]     [OK] Generated: results/test_141485.json
+[2025-11-19 16:37:36]     Actual: 565940 nodes, 3961940 edges
+[2025-11-19 16:37:36]   Generating test case for 146535 nodes...
+[2025-11-19 16:44:32]     [OK] Generated: results/test_146535.json
+[2025-11-19 16:44:32]     Actual: 586142 nodes, 4171520 edges
+[2025-11-19 16:44:32]   Generating test case for 151584 nodes...
+[2025-11-19 16:51:39]     [OK] Generated: results/test_151584.json
+[2025-11-19 16:51:39]     Actual: 606336 nodes, 4390824 edges
+[2025-11-19 16:51:39]   Generating test case for 156634 nodes...
+[2025-11-19 16:59:14]     [OK] Generated: results/test_156634.json
+[2025-11-19 16:59:14]     Actual: 626537 nodes, 4516502 edges
+[2025-11-19 16:59:14]   Generating test case for 161683 nodes...
+[2025-11-19 17:07:15]     [OK] Generated: results/test_161683.json
+[2025-11-19 17:07:15]     Actual: 646735 nodes, 4650818 edges
+[2025-11-19 17:07:15]   Generating test case for 166733 nodes...
+[2025-11-19 17:15:39]     [OK] Generated: results/test_166733.json
+[2025-11-19 17:15:39]     Actual: 666932 nodes, 4798280 edges
+[2025-11-19 17:15:39]   Generating test case for 171782 nodes...
+[2025-11-19 17:24:14]     [OK] Generated: results/test_171782.json
+[2025-11-19 17:24:14]     Actual: 687131 nodes, 4956922 edges
+[2025-11-19 17:24:14]   Generating test case for 176832 nodes...
+[2025-11-19 17:33:11]     [OK] Generated: results/test_176832.json
+[2025-11-19 17:33:11]     Actual: 707332 nodes, 5098497 edges
+[2025-11-19 17:33:11]   Generating test case for 181881 nodes...
+[2025-11-19 17:42:23]     [OK] Generated: results/test_181881.json
+[2025-11-19 17:42:23]     Actual: 727525 nodes, 5276086 edges
+[2025-11-19 17:42:23]   Generating test case for 186931 nodes...
+[2025-11-19 17:51:59]     [OK] Generated: results/test_186931.json
+[2025-11-19 17:51:59]     Actual: 747726 nodes, 5424707 edges
+[2025-11-19 17:51:59]   Generating test case for 191980 nodes...
+[2025-11-19 18:01:59]     [OK] Generated: results/test_191980.json
+[2025-11-19 18:01:59]     Actual: 767922 nodes, 5607623 edges
+[2025-11-19 18:01:59]   Generating test case for 197030 nodes...
+[2025-11-19 18:11:59]     [OK] Generated: results/test_197030.json
+[2025-11-19 18:11:59]     Actual: 788123 nodes, 5796512 edges
+[2025-11-19 18:11:59]   Generating test case for 202079 nodes...
+[2025-11-19 18:22:30]     [OK] Generated: results/test_202079.json
+[2025-11-19 18:22:30]     Actual: 808316 nodes, 6013302 edges
+[2025-11-19 18:22:30]   Generating test case for 207129 nodes...
+[2025-11-19 18:33:08]     [OK] Generated: results/test_207129.json
+[2025-11-19 18:33:08]     Actual: 828518 nodes, 6147310 edges
+[2025-11-19 18:33:08]   Generating test case for 212178 nodes...
+[2025-11-19 18:44:01]     [OK] Generated: results/test_212178.json
+[2025-11-19 18:44:01]     Actual: 848712 nodes, 6309290 edges
+[2025-11-19 18:44:01]   Generating test case for 217228 nodes...
+[2025-11-19 18:55:22]     [OK] Generated: results/test_217228.json
+[2025-11-19 18:55:22]     Actual: 868912 nodes, 6472320 edges
+[2025-11-19 18:55:22]   Generating test case for 222277 nodes...
+[2025-11-19 19:09:18]     [OK] Generated: results/test_222277.json
+[2025-11-19 19:09:18]     Actual: 889114 nodes, 6651660 edges
+[2025-11-19 19:09:18]   Generating test case for 227327 nodes...
+[2025-11-19 19:31:16]     [OK] Generated: results/test_227327.json
+[2025-11-19 19:31:16]     Actual: 909308 nodes, 6834584 edges
+[2025-11-19 19:31:16]   Generating test case for 232376 nodes...
+[2025-11-19 19:53:28]     [OK] Generated: results/test_232376.json
+[2025-11-19 19:53:28]     Actual: 929504 nodes, 7073662 edges
+[2025-11-19 19:53:28]   Generating test case for 237426 nodes...
+[2025-11-19 20:16:54]     [OK] Generated: results/test_237426.json
+[2025-11-19 20:16:54]     Actual: 949704 nodes, 7220799 edges
+[2025-11-19 20:16:54]   Generating test case for 242475 nodes...
+[2025-11-19 20:40:48]     [OK] Generated: results/test_242475.json
+[2025-11-19 20:40:48]     Actual: 969901 nodes, 7399972 edges
+[2025-11-19 20:40:48]   Generating test case for 247525 nodes...
+[2025-11-19 21:23:31]     [OK] Generated: results/test_247525.json
+[2025-11-19 21:23:31]     Actual: 990100 nodes, 7591967 edges
+[2025-11-19 21:23:31]   Generating test case for 252574 nodes...
+[2025-11-19 21:57:23]     [OK] Generated: results/test_252574.json
+[2025-11-19 21:57:23]     Actual: 1010298 nodes, 7815174 edges
+[2025-11-19 21:57:23]   Generating test case for 257624 nodes...
+[2025-11-19 22:29:18]     [OK] Generated: results/test_257624.json
+[2025-11-19 22:29:18]     Actual: 1030496 nodes, 8003341 edges
+[2025-11-19 22:29:18]   Generating test case for 262673 nodes...
+[2025-11-19 23:02:02]     [OK] Generated: results/test_262673.json
+[2025-11-19 23:02:02]     Actual: 1050693 nodes, 8239412 edges
+[2025-11-19 23:02:02]   Generating test case for 267723 nodes...
+[2025-11-19 23:34:31]     [OK] Generated: results/test_267723.json
+[2025-11-19 23:34:31]     Actual: 1070892 nodes, 8460528 edges
+[2025-11-19 23:34:31]   Generating test case for 272772 nodes...
+[2025-11-20 00:04:56]     [OK] Generated: results/test_272772.json
+[2025-11-20 00:04:56]     Actual: 1091088 nodes, 8724667 edges
+[2025-11-20 00:04:56]   Generating test case for 277822 nodes...
+[2025-11-20 00:26:22]     [OK] Generated: results/test_277822.json
+[2025-11-20 00:26:22]     Actual: 1111289 nodes, 8911780 edges
+[2025-11-20 00:26:22]   Generating test case for 282871 nodes...
+[2025-11-20 00:49:46]     [OK] Generated: results/test_282871.json
+[2025-11-20 00:49:46]     Actual: 1131485 nodes, 9047832 edges
+[2025-11-20 00:49:46]   Generating test case for 287921 nodes...
+[2025-11-20 01:17:27]     [OK] Generated: results/test_287921.json
+[2025-11-20 01:17:27]     Actual: 1151687 nodes, 9211425 edges
+[2025-11-20 01:17:27]   Generating test case for 292970 nodes...
+[2025-11-20 01:46:22]     [OK] Generated: results/test_292970.json
+[2025-11-20 01:46:22]     Actual: 1171883 nodes, 9354469 edges
+[2025-11-20 01:46:22]   Generating test case for 298020 nodes...
+[2025-11-20 02:11:56]     [OK] Generated: results/test_298020.json
+[2025-11-20 02:11:56]     Actual: 1192082 nodes, 9524199 edges
+[2025-11-20 02:11:56]   Generating test case for 303069 nodes...
+[2025-11-20 02:29:06]     [OK] Generated: results/test_303069.json
+[2025-11-20 02:29:06]     Actual: 1212276 nodes, 9710955 edges
+[2025-11-20 02:29:06]   Generating test case for 308119 nodes...
+[2025-11-20 02:46:20]     [OK] Generated: results/test_308119.json
+[2025-11-20 02:46:20]     Actual: 1232476 nodes, 9899982 edges
+[2025-11-20 02:46:20]   Generating test case for 313168 nodes...
+[2025-11-20 03:03:05]     [OK] Generated: results/test_313168.json
+[2025-11-20 03:03:05]     Actual: 1252677 nodes, 10068326 edges
+[2025-11-20 03:03:05]   Generating test case for 318218 nodes...
+[2025-11-20 03:20:31]     [OK] Generated: results/test_318218.json
+[2025-11-20 03:20:31]     Actual: 1272873 nodes, 10232702 edges
+[2025-11-20 03:20:31]   Generating test case for 323267 nodes...
+[2025-11-20 03:38:48]     [OK] Generated: results/test_323267.json
+[2025-11-20 03:38:48]     Actual: 1293068 nodes, 10450934 edges
+[2025-11-20 03:38:48]   Generating test case for 328317 nodes...
+[2025-11-20 03:57:35]     [OK] Generated: results/test_328317.json
+[2025-11-20 03:57:35]     Actual: 1313269 nodes, 10617105 edges
+[2025-11-20 03:57:35]   Generating test case for 333366 nodes...
+[2025-11-20 04:16:03]     [OK] Generated: results/test_333366.json
+[2025-11-20 04:16:03]     Actual: 1333465 nodes, 10820581 edges
+[2025-11-20 04:16:03]   Generating test case for 338416 nodes...
+[2025-11-20 04:34:55]     [OK] Generated: results/test_338416.json
+[2025-11-20 04:34:55]     Actual: 1353665 nodes, 11024573 edges
+[2025-11-20 04:34:55]   Generating test case for 343465 nodes...
+[2025-11-20 04:53:41]     [OK] Generated: results/test_343465.json
+[2025-11-20 04:53:41]     Actual: 1373861 nodes, 11265683 edges
+[2025-11-20 04:53:41]   Generating test case for 348515 nodes...
+[2025-11-20 05:12:48]     [OK] Generated: results/test_348515.json
+[2025-11-20 05:12:48]     Actual: 1394060 nodes, 11475805 edges
+[2025-11-20 05:12:48]   Generating test case for 353564 nodes...
+[2025-11-20 05:32:56]     [OK] Generated: results/test_353564.json
+[2025-11-20 05:32:56]     Actual: 1414258 nodes, 11644175 edges
+[2025-11-20 05:32:56]   Generating test case for 358614 nodes...
+[2025-11-20 05:53:21]     [OK] Generated: results/test_358614.json
+[2025-11-20 05:53:21]     Actual: 1434457 nodes, 11810396 edges
+[2025-11-20 05:53:21]   Generating test case for 363663 nodes...
+[2025-11-20 06:13:53]     [OK] Generated: results/test_363663.json
+[2025-11-20 06:13:53]     Actual: 1454653 nodes, 12008808 edges
+[2025-11-20 06:13:53]   Generating test case for 368713 nodes...
+[2025-11-20 06:34:30]     [OK] Generated: results/test_368713.json
+[2025-11-20 06:34:30]     Actual: 1474853 nodes, 12187592 edges
+[2025-11-20 06:34:30]   Generating test case for 373762 nodes...
+[2025-11-20 06:56:20]     [OK] Generated: results/test_373762.json
+[2025-11-20 06:56:20]     Actual: 1495048 nodes, 12385189 edges
+[2025-11-20 06:56:20]   Generating test case for 378812 nodes...
+[2025-11-20 07:18:10]     [OK] Generated: results/test_378812.json
+[2025-11-20 07:18:10]     Actual: 1515248 nodes, 12591869 edges
+[2025-11-20 07:18:10]   Generating test case for 383861 nodes...
+[2025-11-20 07:39:58]     [OK] Generated: results/test_383861.json
+[2025-11-20 07:39:58]     Actual: 1535444 nodes, 12822247 edges
+[2025-11-20 07:39:58]   Generating test case for 388911 nodes...
+[2025-11-20 08:02:50]     [OK] Generated: results/test_388911.json
+[2025-11-20 08:02:50]     Actual: 1555646 nodes, 13074301 edges
+[2025-11-20 08:02:50]   Generating test case for 393960 nodes...
+[2025-11-20 08:25:49]     [OK] Generated: results/test_393960.json
+[2025-11-20 08:25:49]     Actual: 1575841 nodes, 13250637 edges
+[2025-11-20 08:25:49]   Generating test case for 399010 nodes...
+[2025-11-20 08:48:34]     [OK] Generated: results/test_399010.json
+[2025-11-20 08:48:34]     Actual: 1596042 nodes, 13465098 edges
+[2025-11-20 08:48:34]   Generating test case for 404059 nodes...
+[2025-11-20 09:11:54]     [OK] Generated: results/test_404059.json
+[2025-11-20 09:11:54]     Actual: 1616236 nodes, 13684685 edges
+[2025-11-20 09:11:54]   Generating test case for 409109 nodes...
+[2025-11-20 09:37:08]     [OK] Generated: results/test_409109.json
+[2025-11-20 09:37:08]     Actual: 1636436 nodes, 13953658 edges
+[2025-11-20 09:37:08]   Generating test case for 414158 nodes...
+[2025-11-20 10:19:22]     [OK] Generated: results/test_414158.json
+[2025-11-20 10:19:22]     Actual: 1656633 nodes, 14153642 edges
+[2025-11-20 10:19:22]   Generating test case for 419208 nodes...
+[2025-11-20 11:05:16]     [OK] Generated: results/test_419208.json
+[2025-11-20 11:05:16]     Actual: 1676834 nodes, 14397162 edges
+[2025-11-20 11:05:16]   Generating test case for 424257 nodes...
+[2025-11-20 11:50:30]     [OK] Generated: results/test_424257.json
+[2025-11-20 11:50:30]     Actual: 1697030 nodes, 14663210 edges
+[2025-11-20 11:50:30]   Generating test case for 429307 nodes...
+[2025-11-20 12:39:59]     [OK] Generated: results/test_429307.json
+[2025-11-20 12:39:59]     Actual: 1717228 nodes, 14951694 edges
+[2025-11-20 12:39:59]   Generating test case for 434356 nodes...
+[2025-11-20 13:32:58]     [OK] Generated: results/test_434356.json
+[2025-11-20 13:32:58]     Actual: 1737424 nodes, 15194444 edges
+[2025-11-20 13:32:58]   Generating test case for 439406 nodes...
+[2025-11-20 14:18:03]     [OK] Generated: results/test_439406.json
+[2025-11-20 14:18:03]     Actual: 1757625 nodes, 15344454 edges
+[2025-11-20 14:18:03]   Generating test case for 444455 nodes...
+[2025-11-20 15:33:21]     [OK] Generated: results/test_444455.json
+[2025-11-20 15:33:21]     Actual: 1777820 nodes, 15500340 edges
+[2025-11-20 15:33:21]   Generating test case for 449505 nodes...
+[2025-11-20 16:07:36]     [OK] Generated: results/test_449505.json
+[2025-11-20 16:07:36]     Actual: 1798021 nodes, 15695726 edges
+[2025-11-20 16:07:36]   Generating test case for 454554 nodes...
+[2025-11-20 16:33:27]     [OK] Generated: results/test_454554.json
+[2025-11-20 16:33:27]     Actual: 1818217 nodes, 15851806 edges
+[2025-11-20 16:33:27]   Generating test case for 459604 nodes...
+[2025-11-20 17:02:11]     [OK] Generated: results/test_459604.json
+[2025-11-20 17:02:11]     Actual: 1838417 nodes, 16051233 edges
+[2025-11-20 17:02:11]   Generating test case for 464653 nodes...
+[2025-11-20 17:37:13]     [OK] Generated: results/test_464653.json
+[2025-11-20 17:37:13]     Actual: 1858612 nodes, 16238608 edges
+[2025-11-20 17:37:13]   Generating test case for 469703 nodes...
+[2025-11-20 18:05:02]     [OK] Generated: results/test_469703.json
+[2025-11-20 18:05:02]     Actual: 1878812 nodes, 16468230 edges
+[2025-11-20 18:05:02]   Generating test case for 474752 nodes...
+[2025-11-20 18:32:38]     [OK] Generated: results/test_474752.json
+[2025-11-20 18:32:38]     Actual: 1899009 nodes, 16663752 edges
+[2025-11-20 18:32:38]   Generating test case for 479802 nodes...
+[2025-11-20 19:01:28]     [OK] Generated: results/test_479802.json
+[2025-11-20 19:01:28]     Actual: 1919208 nodes, 16859330 edges
+[2025-11-20 19:01:28]   Generating test case for 484851 nodes...
+[2025-11-20 19:30:30]     [OK] Generated: results/test_484851.json
+[2025-11-20 19:30:30]     Actual: 1939405 nodes, 17074057 edges
+[2025-11-20 19:30:30]   Generating test case for 489901 nodes...
+[2025-11-20 20:00:40]     [OK] Generated: results/test_489901.json
+[2025-11-20 20:00:40]     Actual: 1959604 nodes, 17291937 edges
+[2025-11-20 20:00:40]   Generating test case for 494950 nodes...
+[2025-11-20 20:49:06]     [OK] Generated: results/test_494950.json
+[2025-11-20 20:49:06]     Actual: 1979801 nodes, 17512999 edges
+[2025-11-20 20:49:06]   Generating test case for 500000 nodes...
+[2025-11-20 21:32:35]     [OK] Generated: results/test_500000.json
+[2025-11-20 21:32:35]     Actual: 2000002 nodes, 17760087 edges
+[2025-11-20 21:32:35] 
+[2025-11-20 21:32:35] STEP 2: Benchmarking all test cases (NO TIMEOUT)...
+[2025-11-20 21:32:35] --------------------------------------------------------------------------------
+[2025-11-20 21:32:35] [1/99] test_100.json
+[2025-11-20 21:32:35]   Progress: 1% | Elapsed: 00:00:00 | Remaining: 98
+[2025-11-20 21:32:35]   [1/4] Running dp_bottomup...
+[2025-11-20 21:32:35]     [OK] 0.90 ms (0.0s)
+[2025-11-20 21:32:35]   [2/4] Running dp_topdown...
+[2025-11-20 21:32:35]     [OK] 1.38 ms (0.0s)
+[2025-11-20 21:32:35]   [3/4] Running graph_statespace...
+[2025-11-20 21:32:35]     [OK] 4.47 ms (0.0s)
+[2025-11-20 21:32:35]   [4/4] Running graph_dag...
+[2025-11-20 21:32:35]     [OK] 3.56 ms (0.0s)
+[2025-11-20 21:32:35]   [COMPLETE] Test case finished in 0.1s
+[2025-11-20 21:32:35] 
+[2025-11-20 21:32:35]   Progress: 1/99 (1%) | Elapsed: 00:00:00 | Est. remaining: 00:00:05
+[2025-11-20 21:32:35] [2/99] test_10198.json
+[2025-11-20 21:32:35]   Progress: 2% | Elapsed: 00:00:00 | Remaining: 97
+[2025-11-20 21:32:35]   Note: Skipping graph solutions for large size (16384 nodes)
+[2025-11-20 21:32:35]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:35]     [OK] 0.20 ms (0.0s)
+[2025-11-20 21:32:35]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:35]     [OK] 1.16 ms (0.0s)
+[2025-11-20 21:32:35]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:35] 
+[2025-11-20 21:32:35]   Progress: 2/99 (2%) | Elapsed: 00:00:00 | Est. remaining: 00:00:04
+[2025-11-20 21:32:35] [3/99] test_15248.json
+[2025-11-20 21:32:35]   Progress: 3% | Elapsed: 00:00:00 | Remaining: 96
+[2025-11-20 21:32:35]   Note: Skipping graph solutions for large size (16384 nodes)
+[2025-11-20 21:32:35]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:35]     [OK] 0.34 ms (0.0s)
+[2025-11-20 21:32:35]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:35]     [OK] 1.07 ms (0.0s)
+[2025-11-20 21:32:35]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:35] 
+[2025-11-20 21:32:35]   Progress: 3/99 (3%) | Elapsed: 00:00:00 | Est. remaining: 00:00:04
+[2025-11-20 21:32:35] [4/99] test_20297.json
+[2025-11-20 21:32:35]   Progress: 4% | Elapsed: 00:00:00 | Remaining: 95
+[2025-11-20 21:32:35]   Note: Skipping graph solutions for large size (60891 nodes)
+[2025-11-20 21:32:35]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:35]     [OK] 0.57 ms (0.0s)
+[2025-11-20 21:32:35]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:35]     [OK] 1.41 ms (0.0s)
+[2025-11-20 21:32:35]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:35] 
+[2025-11-20 21:32:35]   Progress: 4/99 (4%) | Elapsed: 00:00:00 | Est. remaining: 00:00:04
+[2025-11-20 21:32:35] [5/99] test_25347.json
+[2025-11-20 21:32:35]   Progress: 5% | Elapsed: 00:00:00 | Remaining: 94
+[2025-11-20 21:32:35]   Note: Skipping graph solutions for large size (76041 nodes)
+[2025-11-20 21:32:35]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:35]     [OK] 0.43 ms (0.0s)
+[2025-11-20 21:32:35]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:35]     [OK] 1.79 ms (0.0s)
+[2025-11-20 21:32:35]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:35] 
+[2025-11-20 21:32:35]   Progress: 5/99 (5%) | Elapsed: 00:00:00 | Est. remaining: 00:00:03
+[2025-11-20 21:32:35] [6/99] test_30396.json
+[2025-11-20 21:32:35]   Progress: 6% | Elapsed: 00:00:00 | Remaining: 93
+[2025-11-20 21:32:35]   Note: Skipping graph solutions for large size (106389 nodes)
+[2025-11-20 21:32:35]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:35]     [OK] 0.37 ms (0.0s)
+[2025-11-20 21:32:35]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:35]     [OK] 2.10 ms (0.0s)
+[2025-11-20 21:32:35]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:35] 
+[2025-11-20 21:32:35]   Progress: 6/99 (6%) | Elapsed: 00:00:00 | Est. remaining: 00:00:03
+[2025-11-20 21:32:35] [7/99] test_35446.json
+[2025-11-20 21:32:35]   Progress: 7% | Elapsed: 00:00:00 | Remaining: 92
+[2025-11-20 21:32:35]   Note: Skipping graph solutions for large size (124063 nodes)
+[2025-11-20 21:32:35]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:35]     [OK] 0.65 ms (0.0s)
+[2025-11-20 21:32:35]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:35]     [OK] 2.58 ms (0.0s)
+[2025-11-20 21:32:35]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:35] 
+[2025-11-20 21:32:35]   Progress: 7/99 (7%) | Elapsed: 00:00:00 | Est. remaining: 00:00:03
+[2025-11-20 21:32:35] [8/99] test_40495.json
+[2025-11-20 21:32:35]   Progress: 8% | Elapsed: 00:00:00 | Remaining: 91
+[2025-11-20 21:32:35]   Note: Skipping graph solutions for large size (141733 nodes)
+[2025-11-20 21:32:35]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:35]     [OK] 0.35 ms (0.0s)
+[2025-11-20 21:32:35]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:35]     [OK] 3.52 ms (0.0s)
+[2025-11-20 21:32:35]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:35] 
+[2025-11-20 21:32:35]   Progress: 8/99 (8%) | Elapsed: 00:00:00 | Est. remaining: 00:00:03
+[2025-11-20 21:32:35] [9/99] test_45545.json
+[2025-11-20 21:32:35]   Progress: 9% | Elapsed: 00:00:00 | Remaining: 90
+[2025-11-20 21:32:35]   Note: Skipping graph solutions for large size (159408 nodes)
+[2025-11-20 21:32:35]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:35]     [OK] 0.38 ms (0.0s)
+[2025-11-20 21:32:35]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:35]     [OK] 2.59 ms (0.0s)
+[2025-11-20 21:32:35]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:35] 
+[2025-11-20 21:32:35]   Progress: 9/99 (9%) | Elapsed: 00:00:00 | Est. remaining: 00:00:03
+[2025-11-20 21:32:35] [10/99] test_50594.json
+[2025-11-20 21:32:35]   Progress: 10% | Elapsed: 00:00:00 | Remaining: 89
+[2025-11-20 21:32:35]   Note: Skipping graph solutions for large size (202376 nodes)
+[2025-11-20 21:32:35]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:35]     [OK] 0.97 ms (0.0s)
+[2025-11-20 21:32:35]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:35]     [OK] 2.98 ms (0.0s)
+[2025-11-20 21:32:35]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:35] 
+[2025-11-20 21:32:35]   Progress: 10/99 (10%) | Elapsed: 00:00:00 | Est. remaining: 00:00:03
+[2025-11-20 21:32:35] [11/99] test_55644.json
+[2025-11-20 21:32:35]   Progress: 11% | Elapsed: 00:00:00 | Remaining: 88
+[2025-11-20 21:32:35]   Note: Skipping graph solutions for large size (222584 nodes)
+[2025-11-20 21:32:35]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:35]     [OK] 1.86 ms (0.0s)
+[2025-11-20 21:32:35]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:35]     [OK] 4.17 ms (0.0s)
+[2025-11-20 21:32:35]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:35] 
+[2025-11-20 21:32:36]   Progress: 11/99 (11%) | Elapsed: 00:00:00 | Est. remaining: 00:00:03
+[2025-11-20 21:32:36] [12/99] test_60693.json
+[2025-11-20 21:32:36]   Progress: 12% | Elapsed: 00:00:00 | Remaining: 87
+[2025-11-20 21:32:36]   Note: Skipping graph solutions for large size (242777 nodes)
+[2025-11-20 21:32:36]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:36]     [OK] 1.18 ms (0.0s)
+[2025-11-20 21:32:36]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:36]     [OK] 4.89 ms (0.0s)
+[2025-11-20 21:32:36]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:36] 
+[2025-11-20 21:32:36]   Progress: 12/99 (12%) | Elapsed: 00:00:01 | Est. remaining: 00:00:03
+[2025-11-20 21:32:36] [13/99] test_65743.json
+[2025-11-20 21:32:36]   Progress: 13% | Elapsed: 00:00:01 | Remaining: 86
+[2025-11-20 21:32:36]   Note: Skipping graph solutions for large size (262972 nodes)
+[2025-11-20 21:32:36]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:36]     [OK] 0.80 ms (0.0s)
+[2025-11-20 21:32:36]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:36]     [OK] 2.54 ms (0.0s)
+[2025-11-20 21:32:36]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:36] 
+[2025-11-20 21:32:36]   Progress: 13/99 (13%) | Elapsed: 00:00:01 | Est. remaining: 00:00:03
+[2025-11-20 21:32:36] [14/99] test_70792.json
+[2025-11-20 21:32:36]   Progress: 14% | Elapsed: 00:00:01 | Remaining: 85
+[2025-11-20 21:32:36]   Note: Skipping graph solutions for large size (283169 nodes)
+[2025-11-20 21:32:36]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:36]     [OK] 1.08 ms (0.0s)
+[2025-11-20 21:32:36]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:36]     [OK] 4.36 ms (0.0s)
+[2025-11-20 21:32:36]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:36] 
+[2025-11-20 21:32:36]   Progress: 14/99 (14%) | Elapsed: 00:00:01 | Est. remaining: 00:00:03
+[2025-11-20 21:32:36] [15/99] test_75842.json
+[2025-11-20 21:32:36]   Progress: 15% | Elapsed: 00:00:01 | Remaining: 84
+[2025-11-20 21:32:36]   Note: Skipping graph solutions for large size (303368 nodes)
+[2025-11-20 21:32:36]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:36]     [OK] 0.89 ms (0.0s)
+[2025-11-20 21:32:36]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:36]     [OK] 3.80 ms (0.0s)
+[2025-11-20 21:32:36]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:36] 
+[2025-11-20 21:32:36]   Progress: 15/99 (15%) | Elapsed: 00:00:01 | Est. remaining: 00:00:03
+[2025-11-20 21:32:36] [16/99] test_80891.json
+[2025-11-20 21:32:36]   Progress: 16% | Elapsed: 00:00:01 | Remaining: 83
+[2025-11-20 21:32:36]   Note: Skipping graph solutions for large size (323565 nodes)
+[2025-11-20 21:32:36]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:36]     [OK] 0.98 ms (0.0s)
+[2025-11-20 21:32:36]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:36]     [OK] 4.14 ms (0.0s)
+[2025-11-20 21:32:36]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:36] 
+[2025-11-20 21:32:36]   Progress: 16/99 (16%) | Elapsed: 00:00:01 | Est. remaining: 00:00:03
+[2025-11-20 21:32:36] [17/99] test_85941.json
+[2025-11-20 21:32:36]   Progress: 17% | Elapsed: 00:00:01 | Remaining: 82
+[2025-11-20 21:32:36]   Note: Skipping graph solutions for large size (343771 nodes)
+[2025-11-20 21:32:36]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:36]     [OK] 0.84 ms (0.0s)
+[2025-11-20 21:32:36]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:36]     [OK] 4.31 ms (0.0s)
+[2025-11-20 21:32:36]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:36] 
+[2025-11-20 21:32:36]   Progress: 17/99 (17%) | Elapsed: 00:00:01 | Est. remaining: 00:00:03
+[2025-11-20 21:32:36] [18/99] test_90990.json
+[2025-11-20 21:32:36]   Progress: 18% | Elapsed: 00:00:01 | Remaining: 81
+[2025-11-20 21:32:36]   Note: Skipping graph solutions for large size (363962 nodes)
+[2025-11-20 21:32:36]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:36]     [OK] 0.93 ms (0.0s)
+[2025-11-20 21:32:36]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:36]     [OK] 4.34 ms (0.0s)
+[2025-11-20 21:32:36]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:36] 
+[2025-11-20 21:32:36]   Progress: 18/99 (18%) | Elapsed: 00:00:01 | Est. remaining: 00:00:03
+[2025-11-20 21:32:36] [19/99] test_96040.json
+[2025-11-20 21:32:36]   Progress: 19% | Elapsed: 00:00:01 | Remaining: 80
+[2025-11-20 21:32:36]   Note: Skipping graph solutions for large size (384160 nodes)
+[2025-11-20 21:32:36]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:36]     [OK] 0.96 ms (0.0s)
+[2025-11-20 21:32:36]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:36]     [OK] 2.99 ms (0.0s)
+[2025-11-20 21:32:36]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:36] 
+[2025-11-20 21:32:36]   Progress: 19/99 (19%) | Elapsed: 00:00:01 | Est. remaining: 00:00:03
+[2025-11-20 21:32:36] [20/99] test_101089.json
+[2025-11-20 21:32:36]   Progress: 20% | Elapsed: 00:00:01 | Remaining: 79
+[2025-11-20 21:32:36]   Note: Skipping graph solutions for large size (404358 nodes)
+[2025-11-20 21:32:36]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:36]     [OK] 0.65 ms (0.0s)
+[2025-11-20 21:32:36]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:36]     [OK] 3.20 ms (0.0s)
+[2025-11-20 21:32:36]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:36] 
+[2025-11-20 21:32:36]   Progress: 20/99 (20%) | Elapsed: 00:00:01 | Est. remaining: 00:00:03
+[2025-11-20 21:32:36] [21/99] test_106139.json
+[2025-11-20 21:32:36]   Progress: 21% | Elapsed: 00:00:01 | Remaining: 78
+[2025-11-20 21:32:36]   Note: Skipping graph solutions for large size (424556 nodes)
+[2025-11-20 21:32:36]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:36]     [OK] 0.41 ms (0.0s)
+[2025-11-20 21:32:36]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:36]     [OK] 1.43 ms (0.0s)
+[2025-11-20 21:32:36]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:36] 
+[2025-11-20 21:32:36]   Progress: 21/99 (21%) | Elapsed: 00:00:01 | Est. remaining: 00:00:02
+[2025-11-20 21:32:36] [22/99] test_111188.json
+[2025-11-20 21:32:36]   Progress: 22% | Elapsed: 00:00:01 | Remaining: 77
+[2025-11-20 21:32:36]   Note: Skipping graph solutions for large size (444754 nodes)
+[2025-11-20 21:32:36]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:36]     [OK] 0.55 ms (0.0s)
+[2025-11-20 21:32:36]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:36]     [OK] 2.85 ms (0.0s)
+[2025-11-20 21:32:36]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:36] 
+[2025-11-20 21:32:36]   Progress: 22/99 (22%) | Elapsed: 00:00:01 | Est. remaining: 00:00:02
+[2025-11-20 21:32:36] [23/99] test_116238.json
+[2025-11-20 21:32:36]   Progress: 23% | Elapsed: 00:00:01 | Remaining: 76
+[2025-11-20 21:32:36]   Note: Skipping graph solutions for large size (464953 nodes)
+[2025-11-20 21:32:36]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:36]     [OK] 0.39 ms (0.0s)
+[2025-11-20 21:32:36]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:36]     [OK] 1.61 ms (0.0s)
+[2025-11-20 21:32:36]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:36] 
+[2025-11-20 21:32:36]   Progress: 23/99 (23%) | Elapsed: 00:00:01 | Est. remaining: 00:00:02
+[2025-11-20 21:32:36] [24/99] test_121287.json
+[2025-11-20 21:32:36]   Progress: 24% | Elapsed: 00:00:01 | Remaining: 75
+[2025-11-20 21:32:36]   Note: Skipping graph solutions for large size (485148 nodes)
+[2025-11-20 21:32:36]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:36]     [OK] 0.46 ms (0.0s)
+[2025-11-20 21:32:36]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:36]     [OK] 1.54 ms (0.0s)
+[2025-11-20 21:32:36]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:36] 
+[2025-11-20 21:32:36]   Progress: 24/99 (24%) | Elapsed: 00:00:01 | Est. remaining: 00:00:02
+[2025-11-20 21:32:36] [25/99] test_126337.json
+[2025-11-20 21:32:36]   Progress: 25% | Elapsed: 00:00:01 | Remaining: 74
+[2025-11-20 21:32:37]   Note: Skipping graph solutions for large size (505351 nodes)
+[2025-11-20 21:32:37]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:37]     [OK] 0.48 ms (0.0s)
+[2025-11-20 21:32:37]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:37]     [OK] 2.03 ms (0.0s)
+[2025-11-20 21:32:37]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:37] 
+[2025-11-20 21:32:37]   Progress: 25/99 (25%) | Elapsed: 00:00:02 | Est. remaining: 00:00:02
+[2025-11-20 21:32:37] [26/99] test_131386.json
+[2025-11-20 21:32:37]   Progress: 26% | Elapsed: 00:00:02 | Remaining: 73
+[2025-11-20 21:32:37]   Note: Skipping graph solutions for large size (525546 nodes)
+[2025-11-20 21:32:37]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:37]     [OK] 0.38 ms (0.0s)
+[2025-11-20 21:32:37]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:37]     [OK] 1.65 ms (0.0s)
+[2025-11-20 21:32:37]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:37] 
+[2025-11-20 21:32:37]   Progress: 26/99 (26%) | Elapsed: 00:00:02 | Est. remaining: 00:00:02
+[2025-11-20 21:32:37] [27/99] test_136436.json
+[2025-11-20 21:32:37]   Progress: 27% | Elapsed: 00:00:02 | Remaining: 72
+[2025-11-20 21:32:37]   Note: Skipping graph solutions for large size (545745 nodes)
+[2025-11-20 21:32:37]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:37]     [OK] 0.76 ms (0.0s)
+[2025-11-20 21:32:37]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:37]     [OK] 1.56 ms (0.0s)
+[2025-11-20 21:32:37]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:37] 
+[2025-11-20 21:32:37]   Progress: 27/99 (27%) | Elapsed: 00:00:02 | Est. remaining: 00:00:02
+[2025-11-20 21:32:37] [28/99] test_141485.json
+[2025-11-20 21:32:37]   Progress: 28% | Elapsed: 00:00:02 | Remaining: 71
+[2025-11-20 21:32:37]   Note: Skipping graph solutions for large size (565940 nodes)
+[2025-11-20 21:32:37]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:37]     [OK] 0.40 ms (0.0s)
+[2025-11-20 21:32:37]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:37]     [OK] 1.69 ms (0.0s)
+[2025-11-20 21:32:37]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:37] 
+[2025-11-20 21:32:37]   Progress: 28/99 (28%) | Elapsed: 00:00:02 | Est. remaining: 00:00:02
+[2025-11-20 21:32:37] [29/99] test_146535.json
+[2025-11-20 21:32:37]   Progress: 29% | Elapsed: 00:00:02 | Remaining: 70
+[2025-11-20 21:32:37]   Note: Skipping graph solutions for large size (586142 nodes)
+[2025-11-20 21:32:37]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:37]     [OK] 0.42 ms (0.0s)
+[2025-11-20 21:32:37]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:37]     [OK] 1.49 ms (0.0s)
+[2025-11-20 21:32:37]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:37] 
+[2025-11-20 21:32:37]   Progress: 29/99 (29%) | Elapsed: 00:00:02 | Est. remaining: 00:00:02
+[2025-11-20 21:32:37] [30/99] test_151584.json
+[2025-11-20 21:32:37]   Progress: 30% | Elapsed: 00:00:02 | Remaining: 69
+[2025-11-20 21:32:37]   Note: Skipping graph solutions for large size (606336 nodes)
+[2025-11-20 21:32:37]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:37]     [OK] 0.72 ms (0.0s)
+[2025-11-20 21:32:37]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:37]     [OK] 1.48 ms (0.0s)
+[2025-11-20 21:32:37]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:37] 
+[2025-11-20 21:32:37]   Progress: 30/99 (30%) | Elapsed: 00:00:02 | Est. remaining: 00:00:02
+[2025-11-20 21:32:37] [31/99] test_156634.json
+[2025-11-20 21:32:37]   Progress: 31% | Elapsed: 00:00:02 | Remaining: 68
+[2025-11-20 21:32:37]   Note: Skipping graph solutions for large size (626537 nodes)
+[2025-11-20 21:32:37]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:37]     [OK] 0.44 ms (0.0s)
+[2025-11-20 21:32:37]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:37]     [OK] 1.58 ms (0.0s)
+[2025-11-20 21:32:37]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:37] 
+[2025-11-20 21:32:37]   Progress: 31/99 (31%) | Elapsed: 00:00:02 | Est. remaining: 00:00:02
+[2025-11-20 21:32:37] [32/99] test_161683.json
+[2025-11-20 21:32:37]   Progress: 32% | Elapsed: 00:00:02 | Remaining: 67
+[2025-11-20 21:32:37]   Note: Skipping graph solutions for large size (646735 nodes)
+[2025-11-20 21:32:37]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:37]     [OK] 0.46 ms (0.0s)
+[2025-11-20 21:32:37]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:37]     [OK] 1.81 ms (0.0s)
+[2025-11-20 21:32:37]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:37] 
+[2025-11-20 21:32:37]   Progress: 32/99 (32%) | Elapsed: 00:00:02 | Est. remaining: 00:00:02
+[2025-11-20 21:32:37] [33/99] test_166733.json
+[2025-11-20 21:32:37]   Progress: 33% | Elapsed: 00:00:02 | Remaining: 66
+[2025-11-20 21:32:37]   Note: Skipping graph solutions for large size (666932 nodes)
+[2025-11-20 21:32:37]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:37]     [OK] 0.35 ms (0.0s)
+[2025-11-20 21:32:37]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:37]     [OK] 1.69 ms (0.0s)
+[2025-11-20 21:32:37]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:37] 
+[2025-11-20 21:32:37]   Progress: 33/99 (33%) | Elapsed: 00:00:02 | Est. remaining: 00:00:02
+[2025-11-20 21:32:37] [34/99] test_171782.json
+[2025-11-20 21:32:37]   Progress: 34% | Elapsed: 00:00:02 | Remaining: 65
+[2025-11-20 21:32:37]   Note: Skipping graph solutions for large size (687131 nodes)
+[2025-11-20 21:32:37]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:37]     [OK] 0.42 ms (0.0s)
+[2025-11-20 21:32:37]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:37]     [OK] 1.55 ms (0.0s)
+[2025-11-20 21:32:37]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:37] 
+[2025-11-20 21:32:37]   Progress: 34/99 (34%) | Elapsed: 00:00:02 | Est. remaining: 00:00:02
+[2025-11-20 21:32:37] [35/99] test_176832.json
+[2025-11-20 21:32:37]   Progress: 35% | Elapsed: 00:00:02 | Remaining: 64
+[2025-11-20 21:32:37]   Note: Skipping graph solutions for large size (707332 nodes)
+[2025-11-20 21:32:37]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:37]     [OK] 0.44 ms (0.0s)
+[2025-11-20 21:32:37]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:37]     [OK] 1.54 ms (0.0s)
+[2025-11-20 21:32:37]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:37] 
+[2025-11-20 21:32:37]   Progress: 35/99 (35%) | Elapsed: 00:00:02 | Est. remaining: 00:00:02
+[2025-11-20 21:32:37] [36/99] test_181881.json
+[2025-11-20 21:32:37]   Progress: 36% | Elapsed: 00:00:02 | Remaining: 63
+[2025-11-20 21:32:37]   Note: Skipping graph solutions for large size (727525 nodes)
+[2025-11-20 21:32:37]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:37]     [OK] 0.45 ms (0.0s)
+[2025-11-20 21:32:37]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:37]     [OK] 1.48 ms (0.0s)
+[2025-11-20 21:32:37]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:37] 
+[2025-11-20 21:32:37]   Progress: 36/99 (36%) | Elapsed: 00:00:02 | Est. remaining: 00:00:02
+[2025-11-20 21:32:37] [37/99] test_186931.json
+[2025-11-20 21:32:37]   Progress: 37% | Elapsed: 00:00:02 | Remaining: 62
+[2025-11-20 21:32:37]   Note: Skipping graph solutions for large size (747726 nodes)
+[2025-11-20 21:32:37]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:37]     [OK] 0.55 ms (0.0s)
+[2025-11-20 21:32:37]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:37]     [OK] 1.54 ms (0.0s)
+[2025-11-20 21:32:37]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:37] 
+[2025-11-20 21:32:38]   Progress: 37/99 (37%) | Elapsed: 00:00:02 | Est. remaining: 00:00:02
+[2025-11-20 21:32:38] [38/99] test_191980.json
+[2025-11-20 21:32:38]   Progress: 38% | Elapsed: 00:00:02 | Remaining: 61
+[2025-11-20 21:32:38]   Note: Skipping graph solutions for large size (767922 nodes)
+[2025-11-20 21:32:38]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:38]     [OK] 0.44 ms (0.0s)
+[2025-11-20 21:32:38]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:38]     [OK] 1.55 ms (0.0s)
+[2025-11-20 21:32:38]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:38] 
+[2025-11-20 21:32:38]   Progress: 38/99 (38%) | Elapsed: 00:00:03 | Est. remaining: 00:00:02
+[2025-11-20 21:32:38] [39/99] test_197030.json
+[2025-11-20 21:32:38]   Progress: 39% | Elapsed: 00:00:03 | Remaining: 60
+[2025-11-20 21:32:38]   Note: Skipping graph solutions for large size (788123 nodes)
+[2025-11-20 21:32:38]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:38]     [OK] 0.41 ms (0.0s)
+[2025-11-20 21:32:38]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:38]     [OK] 1.82 ms (0.0s)
+[2025-11-20 21:32:38]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:38] 
+[2025-11-20 21:32:38]   Progress: 39/99 (39%) | Elapsed: 00:00:03 | Est. remaining: 00:00:02
+[2025-11-20 21:32:38] [40/99] test_202079.json
+[2025-11-20 21:32:38]   Progress: 40% | Elapsed: 00:00:03 | Remaining: 59
+[2025-11-20 21:32:38]   Note: Skipping graph solutions for large size (808316 nodes)
+[2025-11-20 21:32:38]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:38]     [OK] 0.37 ms (0.0s)
+[2025-11-20 21:32:38]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:38]     [OK] 1.49 ms (0.0s)
+[2025-11-20 21:32:38]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:38] 
+[2025-11-20 21:32:38]   Progress: 40/99 (40%) | Elapsed: 00:00:03 | Est. remaining: 00:00:02
+[2025-11-20 21:32:38] [41/99] test_207129.json
+[2025-11-20 21:32:38]   Progress: 41% | Elapsed: 00:00:03 | Remaining: 58
+[2025-11-20 21:32:38]   Note: Skipping graph solutions for large size (828518 nodes)
+[2025-11-20 21:32:38]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:38]     [OK] 0.48 ms (0.0s)
+[2025-11-20 21:32:38]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:38]     [OK] 1.95 ms (0.0s)
+[2025-11-20 21:32:38]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:38] 
+[2025-11-20 21:32:38]   Progress: 41/99 (41%) | Elapsed: 00:00:03 | Est. remaining: 00:00:02
+[2025-11-20 21:32:38] [42/99] test_212178.json
+[2025-11-20 21:32:38]   Progress: 42% | Elapsed: 00:00:03 | Remaining: 57
+[2025-11-20 21:32:38]   Note: Skipping graph solutions for large size (848712 nodes)
+[2025-11-20 21:32:38]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:38]     [OK] 0.30 ms (0.0s)
+[2025-11-20 21:32:38]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:38]     [OK] 2.37 ms (0.0s)
+[2025-11-20 21:32:38]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:38] 
+[2025-11-20 21:32:38]   Progress: 42/99 (42%) | Elapsed: 00:00:03 | Est. remaining: 00:00:02
+[2025-11-20 21:32:38] [43/99] test_217228.json
+[2025-11-20 21:32:38]   Progress: 43% | Elapsed: 00:00:03 | Remaining: 56
+[2025-11-20 21:32:38]   Note: Skipping graph solutions for large size (868912 nodes)
+[2025-11-20 21:32:38]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:38]     [OK] 0.38 ms (0.0s)
+[2025-11-20 21:32:38]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:38]     [OK] 1.74 ms (0.0s)
+[2025-11-20 21:32:38]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:38] 
+[2025-11-20 21:32:38]   Progress: 43/99 (43%) | Elapsed: 00:00:03 | Est. remaining: 00:00:02
+[2025-11-20 21:32:38] [44/99] test_222277.json
+[2025-11-20 21:32:38]   Progress: 44% | Elapsed: 00:00:03 | Remaining: 55
+[2025-11-20 21:32:38]   Note: Skipping graph solutions for large size (889114 nodes)
+[2025-11-20 21:32:38]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:38]     [OK] 0.45 ms (0.0s)
+[2025-11-20 21:32:38]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:38]     [OK] 1.57 ms (0.0s)
+[2025-11-20 21:32:38]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:38] 
+[2025-11-20 21:32:38]   Progress: 44/99 (44%) | Elapsed: 00:00:03 | Est. remaining: 00:00:02
+[2025-11-20 21:32:38] [45/99] test_227327.json
+[2025-11-20 21:32:38]   Progress: 45% | Elapsed: 00:00:03 | Remaining: 54
+[2025-11-20 21:32:38]   Note: Skipping graph solutions for large size (909308 nodes)
+[2025-11-20 21:32:38]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:38]     [OK] 0.42 ms (0.0s)
+[2025-11-20 21:32:38]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:38]     [OK] 1.35 ms (0.0s)
+[2025-11-20 21:32:38]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:38] 
+[2025-11-20 21:32:38]   Progress: 45/99 (45%) | Elapsed: 00:00:03 | Est. remaining: 00:00:02
+[2025-11-20 21:32:38] [46/99] test_232376.json
+[2025-11-20 21:32:38]   Progress: 46% | Elapsed: 00:00:03 | Remaining: 53
+[2025-11-20 21:32:38]   Note: Skipping graph solutions for large size (929504 nodes)
+[2025-11-20 21:32:38]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:38]     [OK] 0.31 ms (0.0s)
+[2025-11-20 21:32:38]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:38]     [OK] 1.68 ms (0.0s)
+[2025-11-20 21:32:38]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:38] 
+[2025-11-20 21:32:38]   Progress: 46/99 (46%) | Elapsed: 00:00:03 | Est. remaining: 00:00:02
+[2025-11-20 21:32:38] [47/99] test_237426.json
+[2025-11-20 21:32:38]   Progress: 47% | Elapsed: 00:00:03 | Remaining: 52
+[2025-11-20 21:32:38]   Note: Skipping graph solutions for large size (949704 nodes)
+[2025-11-20 21:32:38]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:38]     [OK] 0.37 ms (0.0s)
+[2025-11-20 21:32:38]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:38]     [OK] 1.87 ms (0.0s)
+[2025-11-20 21:32:38]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:38] 
+[2025-11-20 21:32:38]   Progress: 47/99 (47%) | Elapsed: 00:00:03 | Est. remaining: 00:00:02
+[2025-11-20 21:32:38] [48/99] test_242475.json
+[2025-11-20 21:32:38]   Progress: 48% | Elapsed: 00:00:03 | Remaining: 51
+[2025-11-20 21:32:38]   Note: Skipping graph solutions for large size (969901 nodes)
+[2025-11-20 21:32:38]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:38]     [OK] 0.32 ms (0.0s)
+[2025-11-20 21:32:38]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:38]     [OK] 2.10 ms (0.0s)
+[2025-11-20 21:32:38]   [COMPLETE] Test case finished in 0.1s
+[2025-11-20 21:32:38] 
+[2025-11-20 21:32:38]   Progress: 48/99 (48%) | Elapsed: 00:00:03 | Est. remaining: 00:00:02
+[2025-11-20 21:32:38] [49/99] test_247525.json
+[2025-11-20 21:32:38]   Progress: 49% | Elapsed: 00:00:03 | Remaining: 50
+[2025-11-20 21:32:38]   Note: Skipping graph solutions for large size (990100 nodes)
+[2025-11-20 21:32:38]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:38]     [OK] 0.52 ms (0.0s)
+[2025-11-20 21:32:38]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:38]     [OK] 1.42 ms (0.0s)
+[2025-11-20 21:32:38]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:38] 
+[2025-11-20 21:32:38]   Progress: 49/99 (49%) | Elapsed: 00:00:03 | Est. remaining: 00:00:01
+[2025-11-20 21:32:38] [50/99] test_252574.json
+[2025-11-20 21:32:38]   Progress: 50% | Elapsed: 00:00:03 | Remaining: 49
+[2025-11-20 21:32:38]   Note: Skipping graph solutions for large size (1010298 nodes)
+[2025-11-20 21:32:38]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:38]     [OK] 0.33 ms (0.0s)
+[2025-11-20 21:32:38]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:38]     [OK] 1.09 ms (0.0s)
+[2025-11-20 21:32:38]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:38] 
+[2025-11-20 21:32:39]   Progress: 50/99 (50%) | Elapsed: 00:00:03 | Est. remaining: 00:00:01
+[2025-11-20 21:32:39] [51/99] test_257624.json
+[2025-11-20 21:32:39]   Progress: 51% | Elapsed: 00:00:03 | Remaining: 48
+[2025-11-20 21:32:39]   Note: Skipping graph solutions for large size (1030496 nodes)
+[2025-11-20 21:32:39]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:39]     [OK] 0.26 ms (0.0s)
+[2025-11-20 21:32:39]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:39]     [OK] 1.78 ms (0.0s)
+[2025-11-20 21:32:39]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:39] 
+[2025-11-20 21:32:39]   Progress: 51/99 (51%) | Elapsed: 00:00:04 | Est. remaining: 00:00:01
+[2025-11-20 21:32:39] [52/99] test_262673.json
+[2025-11-20 21:32:39]   Progress: 52% | Elapsed: 00:00:04 | Remaining: 47
+[2025-11-20 21:32:39]   Note: Skipping graph solutions for large size (1050693 nodes)
+[2025-11-20 21:32:39]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:39]     [OK] 0.62 ms (0.0s)
+[2025-11-20 21:32:39]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:39]     [OK] 2.00 ms (0.0s)
+[2025-11-20 21:32:39]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:39] 
+[2025-11-20 21:32:39]   Progress: 52/99 (52%) | Elapsed: 00:00:04 | Est. remaining: 00:00:01
+[2025-11-20 21:32:39] [53/99] test_267723.json
+[2025-11-20 21:32:39]   Progress: 53% | Elapsed: 00:00:04 | Remaining: 46
+[2025-11-20 21:32:39]   Note: Skipping graph solutions for large size (1070892 nodes)
+[2025-11-20 21:32:39]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:39]     [OK] 0.47 ms (0.0s)
+[2025-11-20 21:32:39]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:39]     [OK] 1.33 ms (0.0s)
+[2025-11-20 21:32:39]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:39] 
+[2025-11-20 21:32:39]   Progress: 53/99 (53%) | Elapsed: 00:00:04 | Est. remaining: 00:00:01
+[2025-11-20 21:32:39] [54/99] test_272772.json
+[2025-11-20 21:32:39]   Progress: 54% | Elapsed: 00:00:04 | Remaining: 45
+[2025-11-20 21:32:39]   Note: Skipping graph solutions for large size (1091088 nodes)
+[2025-11-20 21:32:39]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:39]     [OK] 0.37 ms (0.0s)
+[2025-11-20 21:32:39]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:39]     [OK] 1.54 ms (0.0s)
+[2025-11-20 21:32:39]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:39] 
+[2025-11-20 21:32:39]   Progress: 54/99 (54%) | Elapsed: 00:00:04 | Est. remaining: 00:00:01
+[2025-11-20 21:32:39] [55/99] test_277822.json
+[2025-11-20 21:32:39]   Progress: 55% | Elapsed: 00:00:04 | Remaining: 44
+[2025-11-20 21:32:39]   Note: Skipping graph solutions for large size (1111289 nodes)
+[2025-11-20 21:32:39]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:39]     [OK] 0.37 ms (0.0s)
+[2025-11-20 21:32:39]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:39]     [OK] 1.71 ms (0.0s)
+[2025-11-20 21:32:39]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:39] 
+[2025-11-20 21:32:39]   Progress: 55/99 (55%) | Elapsed: 00:00:04 | Est. remaining: 00:00:01
+[2025-11-20 21:32:39] [56/99] test_282871.json
+[2025-11-20 21:32:39]   Progress: 56% | Elapsed: 00:00:04 | Remaining: 43
+[2025-11-20 21:32:39]   Note: Skipping graph solutions for large size (1131485 nodes)
+[2025-11-20 21:32:39]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:39]     [OK] 0.63 ms (0.0s)
+[2025-11-20 21:32:39]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:39]     [OK] 1.55 ms (0.0s)
+[2025-11-20 21:32:39]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:39] 
+[2025-11-20 21:32:39]   Progress: 56/99 (56%) | Elapsed: 00:00:04 | Est. remaining: 00:00:01
+[2025-11-20 21:32:39] [57/99] test_287921.json
+[2025-11-20 21:32:39]   Progress: 57% | Elapsed: 00:00:04 | Remaining: 42
+[2025-11-20 21:32:39]   Note: Skipping graph solutions for large size (1151687 nodes)
+[2025-11-20 21:32:39]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:39]     [OK] 0.39 ms (0.0s)
+[2025-11-20 21:32:39]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:39]     [OK] 1.49 ms (0.0s)
+[2025-11-20 21:32:39]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:39] 
+[2025-11-20 21:32:39]   Progress: 57/99 (57%) | Elapsed: 00:00:04 | Est. remaining: 00:00:01
+[2025-11-20 21:32:39] [58/99] test_292970.json
+[2025-11-20 21:32:39]   Progress: 58% | Elapsed: 00:00:04 | Remaining: 41
+[2025-11-20 21:32:39]   Note: Skipping graph solutions for large size (1171883 nodes)
+[2025-11-20 21:32:39]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:39]     [OK] 0.34 ms (0.0s)
+[2025-11-20 21:32:39]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:39]     [OK] 1.62 ms (0.0s)
+[2025-11-20 21:32:39]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:39] 
+[2025-11-20 21:32:39]   Progress: 58/99 (58%) | Elapsed: 00:00:04 | Est. remaining: 00:00:01
+[2025-11-20 21:32:39] [59/99] test_298020.json
+[2025-11-20 21:32:39]   Progress: 59% | Elapsed: 00:00:04 | Remaining: 40
+[2025-11-20 21:32:39]   Note: Skipping graph solutions for large size (1192082 nodes)
+[2025-11-20 21:32:39]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:39]     [OK] 0.34 ms (0.0s)
+[2025-11-20 21:32:39]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:39]     [OK] 1.54 ms (0.0s)
+[2025-11-20 21:32:39]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:39] 
+[2025-11-20 21:32:39]   Progress: 59/99 (59%) | Elapsed: 00:00:04 | Est. remaining: 00:00:01
+[2025-11-20 21:32:39] [60/99] test_303069.json
+[2025-11-20 21:32:39]   Progress: 60% | Elapsed: 00:00:04 | Remaining: 39
+[2025-11-20 21:32:39]   Note: Skipping graph solutions for large size (1212276 nodes)
+[2025-11-20 21:32:39]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:39]     [OK] 0.38 ms (0.0s)
+[2025-11-20 21:32:39]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:39]     [OK] 1.42 ms (0.0s)
+[2025-11-20 21:32:39]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:39] 
+[2025-11-20 21:32:39]   Progress: 60/99 (60%) | Elapsed: 00:00:04 | Est. remaining: 00:00:01
+[2025-11-20 21:32:39] [61/99] test_308119.json
+[2025-11-20 21:32:39]   Progress: 61% | Elapsed: 00:00:04 | Remaining: 38
+[2025-11-20 21:32:39]   Note: Skipping graph solutions for large size (1232476 nodes)
+[2025-11-20 21:32:39]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:39]     [OK] 0.47 ms (0.0s)
+[2025-11-20 21:32:39]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:39]     [OK] 1.38 ms (0.0s)
+[2025-11-20 21:32:39]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:39] 
+[2025-11-20 21:32:39]   Progress: 61/99 (61%) | Elapsed: 00:00:04 | Est. remaining: 00:00:01
+[2025-11-20 21:32:39] [62/99] test_313168.json
+[2025-11-20 21:32:39]   Progress: 62% | Elapsed: 00:00:04 | Remaining: 37
+[2025-11-20 21:32:39]   Note: Skipping graph solutions for large size (1252677 nodes)
+[2025-11-20 21:32:39]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:39]     [OK] 0.35 ms (0.0s)
+[2025-11-20 21:32:39]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:39]     [OK] 1.49 ms (0.0s)
+[2025-11-20 21:32:39]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:39] 
+[2025-11-20 21:32:39]   Progress: 62/99 (62%) | Elapsed: 00:00:04 | Est. remaining: 00:00:01
+[2025-11-20 21:32:39] [63/99] test_318218.json
+[2025-11-20 21:32:39]   Progress: 63% | Elapsed: 00:00:04 | Remaining: 36
+[2025-11-20 21:32:39]   Note: Skipping graph solutions for large size (1272873 nodes)
+[2025-11-20 21:32:39]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:39]     [OK] 0.45 ms (0.0s)
+[2025-11-20 21:32:39]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:39]     [OK] 1.50 ms (0.0s)
+[2025-11-20 21:32:39]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:39] 
+[2025-11-20 21:32:39]   Progress: 63/99 (63%) | Elapsed: 00:00:04 | Est. remaining: 00:00:01
+[2025-11-20 21:32:39] [64/99] test_323267.json
+[2025-11-20 21:32:39]   Progress: 64% | Elapsed: 00:00:04 | Remaining: 35
+[2025-11-20 21:32:39]   Note: Skipping graph solutions for large size (1293068 nodes)
+[2025-11-20 21:32:40]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:40]     [OK] 0.43 ms (0.0s)
+[2025-11-20 21:32:40]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:40]     [OK] 1.76 ms (0.0s)
+[2025-11-20 21:32:40]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:40] 
+[2025-11-20 21:32:40]   Progress: 64/99 (64%) | Elapsed: 00:00:04 | Est. remaining: 00:00:01
+[2025-11-20 21:32:40] [65/99] test_328317.json
+[2025-11-20 21:32:40]   Progress: 65% | Elapsed: 00:00:04 | Remaining: 34
+[2025-11-20 21:32:40]   Note: Skipping graph solutions for large size (1313269 nodes)
+[2025-11-20 21:32:40]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:40]     [OK] 0.33 ms (0.0s)
+[2025-11-20 21:32:40]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:40]     [OK] 1.80 ms (0.0s)
+[2025-11-20 21:32:40]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:40] 
+[2025-11-20 21:32:40]   Progress: 65/99 (65%) | Elapsed: 00:00:05 | Est. remaining: 00:00:01
+[2025-11-20 21:32:40] [66/99] test_333366.json
+[2025-11-20 21:32:40]   Progress: 66% | Elapsed: 00:00:05 | Remaining: 33
+[2025-11-20 21:32:40]   Note: Skipping graph solutions for large size (1333465 nodes)
+[2025-11-20 21:32:40]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:40]     [OK] 0.22 ms (0.0s)
+[2025-11-20 21:32:40]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:40]     [OK] 1.40 ms (0.0s)
+[2025-11-20 21:32:40]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:40] 
+[2025-11-20 21:32:40]   Progress: 66/99 (66%) | Elapsed: 00:00:05 | Est. remaining: 00:00:01
+[2025-11-20 21:32:40] [67/99] test_338416.json
+[2025-11-20 21:32:40]   Progress: 67% | Elapsed: 00:00:05 | Remaining: 32
+[2025-11-20 21:32:40]   Note: Skipping graph solutions for large size (1353665 nodes)
+[2025-11-20 21:32:40]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:40]     [OK] 0.39 ms (0.0s)
+[2025-11-20 21:32:40]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:40]     [OK] 1.36 ms (0.0s)
+[2025-11-20 21:32:40]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:40] 
+[2025-11-20 21:32:40]   Progress: 67/99 (67%) | Elapsed: 00:00:05 | Est. remaining: 00:00:01
+[2025-11-20 21:32:40] [68/99] test_343465.json
+[2025-11-20 21:32:40]   Progress: 68% | Elapsed: 00:00:05 | Remaining: 31
+[2025-11-20 21:32:40]   Note: Skipping graph solutions for large size (1373861 nodes)
+[2025-11-20 21:32:40]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:40]     [OK] 0.37 ms (0.0s)
+[2025-11-20 21:32:40]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:40]     [OK] 1.50 ms (0.0s)
+[2025-11-20 21:32:40]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:40] 
+[2025-11-20 21:32:40]   Progress: 68/99 (68%) | Elapsed: 00:00:05 | Est. remaining: 00:00:01
+[2025-11-20 21:32:40] [69/99] test_348515.json
+[2025-11-20 21:32:40]   Progress: 69% | Elapsed: 00:00:05 | Remaining: 30
+[2025-11-20 21:32:40]   Note: Skipping graph solutions for large size (1394060 nodes)
+[2025-11-20 21:32:40]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:40]     [OK] 0.42 ms (0.0s)
+[2025-11-20 21:32:40]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:40]     [OK] 1.27 ms (0.0s)
+[2025-11-20 21:32:40]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:40] 
+[2025-11-20 21:32:40]   Progress: 69/99 (69%) | Elapsed: 00:00:05 | Est. remaining: 00:00:01
+[2025-11-20 21:32:40] [70/99] test_353564.json
+[2025-11-20 21:32:40]   Progress: 70% | Elapsed: 00:00:05 | Remaining: 29
+[2025-11-20 21:32:40]   Note: Skipping graph solutions for large size (1414258 nodes)
+[2025-11-20 21:32:40]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:40]     [OK] 0.31 ms (0.0s)
+[2025-11-20 21:32:40]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:40]     [OK] 1.50 ms (0.0s)
+[2025-11-20 21:32:40]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:40] 
+[2025-11-20 21:32:40]   Progress: 70/99 (70%) | Elapsed: 00:00:05 | Est. remaining: 00:00:01
+[2025-11-20 21:32:40] [71/99] test_358614.json
+[2025-11-20 21:32:40]   Progress: 71% | Elapsed: 00:00:05 | Remaining: 28
+[2025-11-20 21:32:40]   Note: Skipping graph solutions for large size (1434457 nodes)
+[2025-11-20 21:32:40]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:40]     [OK] 0.37 ms (0.0s)
+[2025-11-20 21:32:40]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:40]     [OK] 1.62 ms (0.0s)
+[2025-11-20 21:32:40]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:40] 
+[2025-11-20 21:32:40]   Progress: 71/99 (71%) | Elapsed: 00:00:05 | Est. remaining: 00:00:01
+[2025-11-20 21:32:40] [72/99] test_363663.json
+[2025-11-20 21:32:40]   Progress: 72% | Elapsed: 00:00:05 | Remaining: 27
+[2025-11-20 21:32:40]   Note: Skipping graph solutions for large size (1454653 nodes)
+[2025-11-20 21:32:40]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:40]     [OK] 0.39 ms (0.0s)
+[2025-11-20 21:32:40]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:40]     [OK] 1.75 ms (0.0s)
+[2025-11-20 21:32:40]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:40] 
+[2025-11-20 21:32:40]   Progress: 72/99 (72%) | Elapsed: 00:00:05 | Est. remaining: 00:00:01
+[2025-11-20 21:32:40] [73/99] test_368713.json
+[2025-11-20 21:32:40]   Progress: 73% | Elapsed: 00:00:05 | Remaining: 26
+[2025-11-20 21:32:40]   Note: Skipping graph solutions for large size (1474853 nodes)
+[2025-11-20 21:32:40]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:40]     [OK] 0.39 ms (0.0s)
+[2025-11-20 21:32:40]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:40]     [OK] 1.44 ms (0.0s)
+[2025-11-20 21:32:40]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:40] 
+[2025-11-20 21:32:40]   Progress: 73/99 (73%) | Elapsed: 00:00:05 | Est. remaining: 00:00:01
+[2025-11-20 21:32:40] [74/99] test_373762.json
+[2025-11-20 21:32:40]   Progress: 74% | Elapsed: 00:00:05 | Remaining: 25
+[2025-11-20 21:32:40]   Note: Skipping graph solutions for large size (1495048 nodes)
+[2025-11-20 21:32:40]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:40]     [OK] 0.31 ms (0.0s)
+[2025-11-20 21:32:40]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:40]     [OK] 1.36 ms (0.0s)
+[2025-11-20 21:32:40]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:40] 
+[2025-11-20 21:32:40]   Progress: 74/99 (74%) | Elapsed: 00:00:05 | Est. remaining: 00:00:00
+[2025-11-20 21:32:40] [75/99] test_378812.json
+[2025-11-20 21:32:40]   Progress: 75% | Elapsed: 00:00:05 | Remaining: 24
+[2025-11-20 21:32:40]   Note: Skipping graph solutions for large size (1515248 nodes)
+[2025-11-20 21:32:40]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:40]     [OK] 0.32 ms (0.0s)
+[2025-11-20 21:32:40]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:40]     [OK] 1.52 ms (0.0s)
+[2025-11-20 21:32:40]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:40] 
+[2025-11-20 21:32:40]   Progress: 75/99 (75%) | Elapsed: 00:00:05 | Est. remaining: 00:00:00
+[2025-11-20 21:32:40] [76/99] test_383861.json
+[2025-11-20 21:32:40]   Progress: 76% | Elapsed: 00:00:05 | Remaining: 23
+[2025-11-20 21:32:40]   Note: Skipping graph solutions for large size (1535444 nodes)
+[2025-11-20 21:32:40]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:40]     [OK] 0.40 ms (0.0s)
+[2025-11-20 21:32:40]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:40]     [OK] 1.65 ms (0.0s)
+[2025-11-20 21:32:40]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:40] 
+[2025-11-20 21:32:40]   Progress: 76/99 (76%) | Elapsed: 00:00:05 | Est. remaining: 00:00:00
+[2025-11-20 21:32:40] [77/99] test_388911.json
+[2025-11-20 21:32:40]   Progress: 77% | Elapsed: 00:00:05 | Remaining: 22
+[2025-11-20 21:32:40]   Note: Skipping graph solutions for large size (1555646 nodes)
+[2025-11-20 21:32:40]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:40]     [OK] 0.35 ms (0.0s)
+[2025-11-20 21:32:40]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:40]     [OK] 1.43 ms (0.0s)
+[2025-11-20 21:32:40]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:40] 
+[2025-11-20 21:32:41]   Progress: 77/99 (77%) | Elapsed: 00:00:05 | Est. remaining: 00:00:00
+[2025-11-20 21:32:41] [78/99] test_393960.json
+[2025-11-20 21:32:41]   Progress: 78% | Elapsed: 00:00:05 | Remaining: 21
+[2025-11-20 21:32:41]   Note: Skipping graph solutions for large size (1575841 nodes)
+[2025-11-20 21:32:41]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:41]     [OK] 0.46 ms (0.0s)
+[2025-11-20 21:32:41]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:41]     [OK] 1.48 ms (0.0s)
+[2025-11-20 21:32:41]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:41] 
+[2025-11-20 21:32:41]   Progress: 78/99 (78%) | Elapsed: 00:00:06 | Est. remaining: 00:00:00
+[2025-11-20 21:32:41] [79/99] test_399010.json
+[2025-11-20 21:32:41]   Progress: 79% | Elapsed: 00:00:06 | Remaining: 20
+[2025-11-20 21:32:41]   Note: Skipping graph solutions for large size (1596042 nodes)
+[2025-11-20 21:32:41]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:41]     [OK] 1.02 ms (0.0s)
+[2025-11-20 21:32:41]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:41]     [OK] 1.96 ms (0.0s)
+[2025-11-20 21:32:41]   [COMPLETE] Test case finished in 0.1s
+[2025-11-20 21:32:41] 
+[2025-11-20 21:32:41]   Progress: 79/99 (79%) | Elapsed: 00:00:06 | Est. remaining: 00:00:00
+[2025-11-20 21:32:41] [80/99] test_404059.json
+[2025-11-20 21:32:41]   Progress: 80% | Elapsed: 00:00:06 | Remaining: 19
+[2025-11-20 21:32:41]   Note: Skipping graph solutions for large size (1616236 nodes)
+[2025-11-20 21:32:41]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:41]     [OK] 0.47 ms (0.0s)
+[2025-11-20 21:32:41]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:41]     [OK] 1.30 ms (0.0s)
+[2025-11-20 21:32:41]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:41] 
+[2025-11-20 21:32:41]   Progress: 80/99 (80%) | Elapsed: 00:00:06 | Est. remaining: 00:00:00
+[2025-11-20 21:32:41] [81/99] test_409109.json
+[2025-11-20 21:32:41]   Progress: 81% | Elapsed: 00:00:06 | Remaining: 18
+[2025-11-20 21:32:41]   Note: Skipping graph solutions for large size (1636436 nodes)
+[2025-11-20 21:32:41]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:41]     [OK] 0.27 ms (0.0s)
+[2025-11-20 21:32:41]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:41]     [OK] 1.80 ms (0.0s)
+[2025-11-20 21:32:41]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:41] 
+[2025-11-20 21:32:41]   Progress: 81/99 (81%) | Elapsed: 00:00:06 | Est. remaining: 00:00:00
+[2025-11-20 21:32:41] [82/99] test_414158.json
+[2025-11-20 21:32:41]   Progress: 82% | Elapsed: 00:00:06 | Remaining: 17
+[2025-11-20 21:32:41]   Note: Skipping graph solutions for large size (1656633 nodes)
+[2025-11-20 21:32:41]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:41]     [OK] 0.36 ms (0.0s)
+[2025-11-20 21:32:41]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:41]     [OK] 1.53 ms (0.0s)
+[2025-11-20 21:32:41]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:41] 
+[2025-11-20 21:32:41]   Progress: 82/99 (82%) | Elapsed: 00:00:06 | Est. remaining: 00:00:00
+[2025-11-20 21:32:41] [83/99] test_419208.json
+[2025-11-20 21:32:41]   Progress: 83% | Elapsed: 00:00:06 | Remaining: 16
+[2025-11-20 21:32:41]   Note: Skipping graph solutions for large size (1676834 nodes)
+[2025-11-20 21:32:41]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:41]     [OK] 0.32 ms (0.0s)
+[2025-11-20 21:32:41]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:41]     [OK] 0.99 ms (0.0s)
+[2025-11-20 21:32:41]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:41] 
+[2025-11-20 21:32:41]   Progress: 83/99 (83%) | Elapsed: 00:00:06 | Est. remaining: 00:00:00
+[2025-11-20 21:32:41] [84/99] test_424257.json
+[2025-11-20 21:32:41]   Progress: 84% | Elapsed: 00:00:06 | Remaining: 15
+[2025-11-20 21:32:41]   Note: Skipping graph solutions for large size (1697030 nodes)
+[2025-11-20 21:32:41]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:41]     [OK] 0.26 ms (0.0s)
+[2025-11-20 21:32:41]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:41]     [OK] 1.14 ms (0.0s)
+[2025-11-20 21:32:41]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:41] 
+[2025-11-20 21:32:41]   Progress: 84/99 (84%) | Elapsed: 00:00:06 | Est. remaining: 00:00:00
+[2025-11-20 21:32:41] [85/99] test_429307.json
+[2025-11-20 21:32:41]   Progress: 85% | Elapsed: 00:00:06 | Remaining: 14
+[2025-11-20 21:32:41]   Note: Skipping graph solutions for large size (1717228 nodes)
+[2025-11-20 21:32:41]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:41]     [OK] 0.25 ms (0.0s)
+[2025-11-20 21:32:41]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:41]     [OK] 1.46 ms (0.0s)
+[2025-11-20 21:32:41]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:41] 
+[2025-11-20 21:32:41]   Progress: 85/99 (85%) | Elapsed: 00:00:06 | Est. remaining: 00:00:00
+[2025-11-20 21:32:41] [86/99] test_434356.json
+[2025-11-20 21:32:41]   Progress: 86% | Elapsed: 00:00:06 | Remaining: 13
+[2025-11-20 21:32:41]   Note: Skipping graph solutions for large size (1737424 nodes)
+[2025-11-20 21:32:41]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:41]     [OK] 0.43 ms (0.0s)
+[2025-11-20 21:32:41]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:41]     [OK] 1.55 ms (0.0s)
+[2025-11-20 21:32:41]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:41] 
+[2025-11-20 21:32:41]   Progress: 86/99 (86%) | Elapsed: 00:00:06 | Est. remaining: 00:00:00
+[2025-11-20 21:32:41] [87/99] test_439406.json
+[2025-11-20 21:32:41]   Progress: 87% | Elapsed: 00:00:06 | Remaining: 12
+[2025-11-20 21:32:41]   Note: Skipping graph solutions for large size (1757625 nodes)
+[2025-11-20 21:32:41]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:41]     [OK] 0.30 ms (0.0s)
+[2025-11-20 21:32:41]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:41]     [OK] 1.59 ms (0.0s)
+[2025-11-20 21:32:41]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:41] 
+[2025-11-20 21:32:41]   Progress: 87/99 (87%) | Elapsed: 00:00:06 | Est. remaining: 00:00:00
+[2025-11-20 21:32:41] [88/99] test_444455.json
+[2025-11-20 21:32:41]   Progress: 88% | Elapsed: 00:00:06 | Remaining: 11
+[2025-11-20 21:32:41]   Note: Skipping graph solutions for large size (1777820 nodes)
+[2025-11-20 21:32:41]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:41]     [OK] 0.29 ms (0.0s)
+[2025-11-20 21:32:41]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:41]     [OK] 1.45 ms (0.0s)
+[2025-11-20 21:32:41]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:41] 
+[2025-11-20 21:32:41]   Progress: 88/99 (88%) | Elapsed: 00:00:06 | Est. remaining: 00:00:00
+[2025-11-20 21:32:41] [89/99] test_449505.json
+[2025-11-20 21:32:41]   Progress: 89% | Elapsed: 00:00:06 | Remaining: 10
+[2025-11-20 21:32:41]   Note: Skipping graph solutions for large size (1798021 nodes)
+[2025-11-20 21:32:41]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:41]     [OK] 0.41 ms (0.0s)
+[2025-11-20 21:32:41]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:41]     [OK] 1.50 ms (0.0s)
+[2025-11-20 21:32:41]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:41] 
+[2025-11-20 21:32:41]   Progress: 89/99 (89%) | Elapsed: 00:00:06 | Est. remaining: 00:00:00
+[2025-11-20 21:32:41] [90/99] test_454554.json
+[2025-11-20 21:32:41]   Progress: 90% | Elapsed: 00:00:06 | Remaining: 9
+[2025-11-20 21:32:41]   Note: Skipping graph solutions for large size (1818217 nodes)
+[2025-11-20 21:32:41]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:41]     [OK] 0.29 ms (0.0s)
+[2025-11-20 21:32:41]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:41]     [OK] 1.07 ms (0.0s)
+[2025-11-20 21:32:41]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:41] 
+[2025-11-20 21:32:41]   Progress: 90/99 (90%) | Elapsed: 00:00:06 | Est. remaining: 00:00:00
+[2025-11-20 21:32:41] [91/99] test_459604.json
+[2025-11-20 21:32:41]   Progress: 91% | Elapsed: 00:00:06 | Remaining: 8
+[2025-11-20 21:32:41]   Note: Skipping graph solutions for large size (1838417 nodes)
+[2025-11-20 21:32:41]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:41]     [OK] 0.42 ms (0.0s)
+[2025-11-20 21:32:41]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:42]     [OK] 1.51 ms (0.0s)
+[2025-11-20 21:32:42]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:42] 
+[2025-11-20 21:32:42]   Progress: 91/99 (91%) | Elapsed: 00:00:06 | Est. remaining: 00:00:00
+[2025-11-20 21:32:42] [92/99] test_464653.json
+[2025-11-20 21:32:42]   Progress: 92% | Elapsed: 00:00:06 | Remaining: 7
+[2025-11-20 21:32:42]   Note: Skipping graph solutions for large size (1858612 nodes)
+[2025-11-20 21:32:42]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:42]     [OK] 0.30 ms (0.0s)
+[2025-11-20 21:32:42]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:42]     [OK] 1.24 ms (0.0s)
+[2025-11-20 21:32:42]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:42] 
+[2025-11-20 21:32:42]   Progress: 92/99 (92%) | Elapsed: 00:00:07 | Est. remaining: 00:00:00
+[2025-11-20 21:32:42] [93/99] test_469703.json
+[2025-11-20 21:32:42]   Progress: 93% | Elapsed: 00:00:07 | Remaining: 6
+[2025-11-20 21:32:42]   Note: Skipping graph solutions for large size (1878812 nodes)
+[2025-11-20 21:32:42]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:42]     [OK] 0.45 ms (0.0s)
+[2025-11-20 21:32:42]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:42]     [OK] 1.62 ms (0.0s)
+[2025-11-20 21:32:42]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:42] 
+[2025-11-20 21:32:42]   Progress: 93/99 (93%) | Elapsed: 00:00:07 | Est. remaining: 00:00:00
+[2025-11-20 21:32:42] [94/99] test_474752.json
+[2025-11-20 21:32:42]   Progress: 94% | Elapsed: 00:00:07 | Remaining: 5
+[2025-11-20 21:32:42]   Note: Skipping graph solutions for large size (1899009 nodes)
+[2025-11-20 21:32:42]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:42]     [OK] 0.34 ms (0.0s)
+[2025-11-20 21:32:42]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:42]     [OK] 1.52 ms (0.0s)
+[2025-11-20 21:32:42]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:42] 
+[2025-11-20 21:32:42]   Progress: 94/99 (94%) | Elapsed: 00:00:07 | Est. remaining: 00:00:00
+[2025-11-20 21:32:42] [95/99] test_479802.json
+[2025-11-20 21:32:42]   Progress: 95% | Elapsed: 00:00:07 | Remaining: 4
+[2025-11-20 21:32:42]   Note: Skipping graph solutions for large size (1919208 nodes)
+[2025-11-20 21:32:42]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:42]     [OK] 0.50 ms (0.0s)
+[2025-11-20 21:32:42]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:42]     [OK] 1.57 ms (0.0s)
+[2025-11-20 21:32:42]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:42] 
+[2025-11-20 21:32:42]   Progress: 95/99 (95%) | Elapsed: 00:00:07 | Est. remaining: 00:00:00
+[2025-11-20 21:32:42] [96/99] test_484851.json
+[2025-11-20 21:32:42]   Progress: 96% | Elapsed: 00:00:07 | Remaining: 3
+[2025-11-20 21:32:42]   Note: Skipping graph solutions for large size (1939405 nodes)
+[2025-11-20 21:32:42]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:42]     [OK] 0.35 ms (0.0s)
+[2025-11-20 21:32:42]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:42]     [OK] 1.77 ms (0.0s)
+[2025-11-20 21:32:42]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:42] 
+[2025-11-20 21:32:42]   Progress: 96/99 (96%) | Elapsed: 00:00:07 | Est. remaining: 00:00:00
+[2025-11-20 21:32:42] [97/99] test_489901.json
+[2025-11-20 21:32:42]   Progress: 97% | Elapsed: 00:00:07 | Remaining: 2
+[2025-11-20 21:32:42]   Note: Skipping graph solutions for large size (1959604 nodes)
+[2025-11-20 21:32:42]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:42]     [OK] 0.31 ms (0.0s)
+[2025-11-20 21:32:42]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:42]     [OK] 2.47 ms (0.0s)
+[2025-11-20 21:32:42]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:42] 
+[2025-11-20 21:32:42]   Progress: 97/99 (97%) | Elapsed: 00:00:07 | Est. remaining: 00:00:00
+[2025-11-20 21:32:42] [98/99] test_494950.json
+[2025-11-20 21:32:42]   Progress: 98% | Elapsed: 00:00:07 | Remaining: 1
+[2025-11-20 21:32:42]   Note: Skipping graph solutions for large size (1979801 nodes)
+[2025-11-20 21:32:42]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:42]     [OK] 0.37 ms (0.0s)
+[2025-11-20 21:32:42]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:42]     [OK] 1.81 ms (0.0s)
+[2025-11-20 21:32:42]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:42] 
+[2025-11-20 21:32:42]   Progress: 98/99 (98%) | Elapsed: 00:00:07 | Est. remaining: 00:00:00
+[2025-11-20 21:32:42] [99/99] test_500000.json
+[2025-11-20 21:32:42]   Progress: 100% | Elapsed: 00:00:07 | Remaining: 0
+[2025-11-20 21:32:42]   Note: Skipping graph solutions for large size (2000002 nodes)
+[2025-11-20 21:32:42]   [1/2] Running dp_bottomup...
+[2025-11-20 21:32:42]     [OK] 0.56 ms (0.0s)
+[2025-11-20 21:32:42]   [2/2] Running dp_topdown...
+[2025-11-20 21:32:42]     [OK] 1.64 ms (0.0s)
+[2025-11-20 21:32:42]   [COMPLETE] Test case finished in 0.0s
+[2025-11-20 21:32:42] 
+[2025-11-20 21:32:42]   Progress: 99/99 (100%) | Elapsed: 00:00:07 | Est. remaining: 00:00:00
+[2025-11-20 21:32:42] 
+[2025-11-20 21:32:42] ================================================================================
+[2025-11-20 21:32:42] BENCHMARKING STATISTICS
+[2025-11-20 21:32:42] ================================================================================
+[2025-11-20 21:32:42] Total tests completed: 99
+[2025-11-20 21:32:42] Total time: 00:00:07
+[2025-11-20 21:32:42] Average time per test: 0.0s
+[2025-11-20 21:32:42] Fastest test: 0.0s
+[2025-11-20 21:32:42] Slowest test: 0.1s
+[2025-11-20 21:32:42] ================================================================================
+[2025-11-20 21:32:42] STEP 3: Results summary...
+[2025-11-20 21:32:42] --------------------------------------------------------------------------------
+[2025-11-20 21:32:42] Results saved incrementally to: results/overnight_benchmark_results.csv
+[2025-11-20 21:32:42] 
+[2025-11-20 21:32:42] Summary:
+[2025-11-20 21:32:42]      Nodes      DP-BU (ms)      DP-TD (ms)      Graph-SS (ms)     Graph-DAG (ms)
+[2025-11-20 21:32:42] --------------------------------------------------------------------------------
+[2025-11-20 21:32:42]         90             1ms             1ms                4ms                4ms
+[2025-11-20 21:32:42]      16384             0ms             1ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:42]      16384             0ms             1ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:42]      60891             1ms             1ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:42]      76041             0ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:42]     106389             0ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:42]     124063             1ms             3ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:42]     141733             0ms             4ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:42]     159408             0ms             3ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:42]     202376             1ms             3ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:42]     222584             2ms             4ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:42]     242777             1ms             5ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:42]     262972             1ms             3ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:42]     283169             1ms             4ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:42]     303368             1ms             4ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:42]     323565             1ms             4ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:42]     343771             1ms             4ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:42]     363962             1ms             4ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:42]     384160             1ms             3ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:42]     404358             1ms             3ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:42]     424556             0ms             1ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:42]     444754             1ms             3ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:42]     464953             0ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:42]     485148             0ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:42]     505351             0ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:42]     525546             0ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:42]     545745             1ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:42]     565940             0ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:42]     586142             0ms             1ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:42]     606336             1ms             1ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:42]     626537             0ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:42]     646735             0ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:42]     666932             0ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:42]     687131             0ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:42]     707332             0ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:42]     727525             0ms             1ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:42]     747726             1ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:42]     767922             0ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:42]     788123             0ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:42]     808316             0ms             1ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:42]     828518             0ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:42]     848712             0ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:42]     868912             0ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:42]     889114             0ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:42]     909308             0ms             1ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:42]     929504             0ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:42]     949704             0ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:42]     969901             0ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]     990100             1ms             1ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1010298             0ms             1ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1030496             0ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1050693             1ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1070892             0ms             1ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1091088             0ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1111289             0ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1131485             1ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1151687             0ms             1ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1171883             0ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1192082             0ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1212276             0ms             1ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1232476             0ms             1ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1252677             0ms             1ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1272873             0ms             1ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1293068             0ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1313269             0ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1333465             0ms             1ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1353665             0ms             1ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1373861             0ms             1ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1394060             0ms             1ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1414258             0ms             1ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1434457             0ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1454653             0ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1474853             0ms             1ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1495048             0ms             1ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1515248             0ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1535444             0ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1555646             0ms             1ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1575841             0ms             1ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1596042             1ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1616236             0ms             1ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1636436             0ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1656633             0ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1676834             0ms             1ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1697030             0ms             1ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1717228             0ms             1ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1737424             0ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1757625             0ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1777820             0ms             1ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1798021             0ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1818217             0ms             1ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1838417             0ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1858612             0ms             1ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1878812             0ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1899009             0ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1919208             1ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1939405             0ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1959604             0ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    1979801             0ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43]    2000002             1ms             2ms    SKIPPED (large     SKIPPED (large 
+[2025-11-20 21:32:43] 
+[2025-11-20 21:32:43] STEP 4: Generating performance graphs...
+[2025-11-20 21:32:43] --------------------------------------------------------------------------------
+[2025-11-20 21:32:43] Loaded 99 benchmark results
+[2025-11-20 21:32:46]   Generated: graphs/runtime_vs_nodes.png
+[2025-11-20 21:32:47]   Generated: graphs/runtime_vs_edges.png
+[2025-11-20 21:32:49]   Generated: graphs/scalability_comparison.png
+[2025-11-20 21:32:49] All graphs generated successfully!
+[2025-11-20 21:32:49] 
+[2025-11-20 21:32:49] ================================================================================
+[2025-11-20 21:32:49] Overnight benchmarking completed: 2025-11-20 21:32:49.827245
+[2025-11-20 21:32:49] Total execution time: 30:25:35
+[2025-11-20 21:32:49] ================================================================================

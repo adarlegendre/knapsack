@@ -1,0 +1,122 @@
+{
+  "capacity": 78,
+  "items": [
+    {
+      "name": "Item_1",
+      "weight": 7,
+      "value": 14
+    },
+    {
+      "name": "Item_2",
+      "weight": 1,
+      "value": 9
+    },
+    {
+      "name": "Item_3",
+      "weight": 9,
+      "value": 16
+    },
+    {
+      "name": "Item_4",
+      "weight": 7,
+      "value": 10
+    },
+    {
+      "name": "Item_5",
+      "weight": 8,
+      "value": 12
+    },
+    {
+      "name": "Item_6",
+      "weight": 10,
+      "value": 7
+    },
+    {
+      "name": "Item_7",
+      "weight": 9,
+      "value": 5
+    },
+    {
+      "name": "Item_8",
+      "weight": 5,
+      "value": 5
+    },
+    {
+      "name": "Item_9",
+      "weight": 2,
+      "value": 20
+    },
+    {
+      "name": "Item_10",
+      "weight": 5,
+      "value": 18
+    },
+    {
+      "name": "Item_11",
+      "weight": 12,
+      "value": 20
+    },
+    {
+      "name": "Item_12",
+      "weight": 3,
+      "value": 10
+    },
+    {
+      "name": "Item_13",
+      "weight": 2,
+      "value": 24
+    },
+    {
+      "name": "Item_14",
+      "weight": 2,
+      "value": 22
+    },
+    {
+      "name": "Item_15",
+      "weight": 6,
+      "value": 16
+    },
+    {
+      "name": "Item_16",
+      "weight": 9,
+      "value": 4
+    },
+    {
+      "name": "Item_17",
+      "weight": 6,
+      "value": 14
+    },
+    {
+      "name": "Item_18",
+      "weight": 6,
+      "value": 20
+    },
+    {
+      "name": "Item_19",
+      "weight": 11,
+      "value": 7
+    },
+    {
+      "name": "Item_20",
+      "weight": 9,
+      "value": 16
+    },
+    {
+      "name": "Item_21",
+      "weight": 8,
+      "value": 17
+    },
+    {
+      "name": "Item_22",
+      "weight": 5,
+      "value": 2
+    }
+  ],
+  "metadata": {
+    "target_nodes": 126337,
+    "actual_nodes": 505351,
+    "actual_edges": 3424235,
+    "num_items": 22,
+    "error": 3.0000237460126487
+  }
+}

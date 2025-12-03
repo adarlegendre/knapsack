@@ -12,6 +12,7 @@ from typing import List, Dict, Tuple, Optional
 def knapsack_dp_topdown(items: List[Dict], capacity: int) -> Tuple[int, List[str]]:
     """
     Solve 0/1 knapsack using top-down dynamic programming with memoization.
+    Optimized: Pre-extract properties, efficient memoization, proper backtracking.
     
     Args:
         items: List of items with 'name', 'weight', 'value'
@@ -21,35 +22,57 @@ def knapsack_dp_topdown(items: List[Dict], capacity: int) -> Tuple[int, List[str
         Tuple of (max_value, selected_items)
     """
     n = len(items)
-    memo = {}  # (i, w) -> (max_value, selected_items)
     
-    def solve(i: int, w: int) -> Tuple[int, List[str]]:
-        """Recursive function with memoization."""
+    # Pre-extract item properties to avoid dictionary lookups
+    item_weights = [item['weight'] for item in items]
+    item_values = [item['value'] for item in items]
+    item_names = [item['name'] for item in items]
+    
+    memo = {}  # (i, w) -> max_value
+    
+    def solve(i: int, w: int) -> int:
+        """Recursive function with memoization (returns only value)."""
         if i == 0 or w == 0:
-            return 0, []
+            return 0
         
-        if (i, w) in memo:
-            return memo[(i, w)]
+        key = (i, w)
+        if key in memo:
+            return memo[key]
         
-        item = items[i - 1]
-        weight = item['weight']
-        value = item['value']
-        name = item['name']
+        weight = item_weights[i - 1]
+        value = item_values[i - 1]
         
         # Don't take item i
-        max_val, selected = solve(i - 1, w)
+        max_val = solve(i - 1, w)
         
         # Try taking item i
         if weight <= w:
-            val_with_item, items_with = solve(i - 1, w - weight)
-            if val_with_item + value > max_val:
-                max_val = val_with_item + value
-                selected = items_with + [name]
+            val_with_item = solve(i - 1, w - weight) + value
+            if val_with_item > max_val:
+                max_val = val_with_item
         
-        memo[(i, w)] = (max_val, selected)
-        return max_val, selected
+        memo[key] = max_val
+        return max_val
     
-    return solve(n, capacity)
+    # Get max value
+    max_value = solve(n, capacity)
+    
+    # Backtrack to find selected items using memo
+    selected_items = []
+    w = capacity
+    
+    for i in range(n, 0, -1):
+        # Check if item i was taken by comparing memo values
+        val_without = memo.get((i - 1, w), 0) if (i > 0) else 0
+        val_with = memo.get((i, w), 0)
+        
+        if val_with != val_without:
+            # Item i was taken
+            selected_items.append(item_names[i - 1])
+            w -= item_weights[i - 1]
+    
+    selected_items.reverse()
+    return max_value, selected_items
 
 def main():
     # Read input
